@@ -1,0 +1,16 @@
+@import '../../styles/imports.scss';
+
+.section {
+  color: $gc-secondary-anti;
+  background: $gc-secondary;
+
+  min-height: calc(50vh - #{$navbar-height});
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .pair {
+  }
+}

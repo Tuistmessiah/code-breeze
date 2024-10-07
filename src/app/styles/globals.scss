@@ -1,0 +1,80 @@
+@import './imports.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  // font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 13px;
+
+  @include sm {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.page {
+  min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
+  margin-top: $navbar-height;
+}
+
+// TODO: Replace this mostly with Section component-wrappe
+.section {
+  width: 100vw;
+  padding: $padding-normal;
+
+  @include sm {
+    padding: $padding-sm;
+  }
+
+  @include md {
+    padding: $padding-md;
+  }
+
+  @include l {
+    padding: $padding-l;
+  }
+
+  @include xl {
+    padding: $padding-xl;
+  }
+}

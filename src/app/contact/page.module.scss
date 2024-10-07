@@ -1,0 +1,24 @@
+@import '../styles/imports.scss';
+
+$map-height: 30vh;
+$map-height-mobile: 20vh;
+
+.container {
+  & > section:nth-child(1) {
+    height: calc(100vh - #{$navbar-height} - #{$map-height-mobile} - 0.3rem);
+  }
+  & > section:nth-child(2) {
+    height: $map-height-mobile;
+  }
+}
+
+@include sm {
+  .container {
+    & > section:nth-child(1) {
+      height: calc(100vh - #{$navbar-height} - #{$map-height} - 0.3rem);
+    }
+    & > section:nth-child(2) {
+      height: $map-height;
+    }
+  }
+}

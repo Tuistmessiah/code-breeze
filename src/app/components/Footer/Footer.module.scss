@@ -1,0 +1,51 @@
+@import '../../styles/imports.scss';
+
+.footer {
+  width: 100%;
+  height: $footer-height;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+
+  background-color: $gc-secondary;
+  color: $gc-secondary-anti;
+  text-align: center;
+
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    li {
+      display: inline;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

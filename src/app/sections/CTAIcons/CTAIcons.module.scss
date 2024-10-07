@@ -1,0 +1,191 @@
+@import '../../styles/imports.scss';
+
+$bg: $gc-secondary;
+$bg-anti: $gc-secondary-anti;
+$icon-bg: $gc-tertiary;
+$icon-bg-anti: $gc-tertiary-anti;
+
+.container {
+  background-color: $bg;
+  color: $bg-anti;
+}
+
+.inner-container {
+  position: relative;
+  min-height: 80vh;
+
+  padding: 50px;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  z-index: 2;
+
+  margin: auto 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  & > button {
+    border: 1px solid black;
+  }
+}
+
+.icons-content {
+  position: absolute;
+  z-index: 0;
+
+  width: 20rem;
+  height: 100%;
+  flex-grow: 1;
+  transform: translateX(-2rem);
+
+  flex: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+
+  .icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    border: 1px solid $bg;
+    border-radius: 50%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+
+    background-color: $icon-bg;
+    color: $bg;
+
+    // 1st Layer
+    &:nth-child(1) {
+      left: -15%;
+      top: 10%;
+      transform: scale(1.3);
+    }
+    &:nth-child(2) {
+      left: 30%;
+      top: 0%;
+      transform: scale(1.1);
+    }
+    &:nth-child(3) {
+      right: -10%;
+      top: 5%;
+      transform: scale(1.6);
+    }
+
+    // 2nd Layer
+    &:nth-child(4) {
+      left: -30%;
+      top: 42%;
+      transform: scale(1.6);
+    }
+    &:nth-child(5) {
+      left: 43%;
+      top: 30%;
+      transform: scale(1.8);
+      display: none;
+    }
+    &:nth-child(6) {
+      right: -23%;
+      top: 51%;
+      transform: scale(1);
+    }
+
+    // 3th Layer
+    &:nth-child(7) {
+      left: -5%;
+      bottom: 17%;
+      transform: scale(1.7);
+    }
+    &:nth-child(8) {
+      right: 28%;
+      top: 60%;
+      transform: scale(1.7);
+    }
+
+    // 4th Layer
+    &:nth-child(9) {
+      right: 50%;
+      bottom: 0%;
+      transform: scale(1.5);
+      display: none;
+    }
+    &:nth-child(10) {
+      right: -15%;
+      bottom: 7%;
+      transform: scale(1.8);
+    }
+
+    & > svg {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}
+
+@include sm {
+  .inner-container {
+  }
+  .text-content {
+  }
+
+  .icons-content {
+    position: relative;
+    transform: translateX(3rem);
+    width: unset;
+    height: unset;
+
+    .icon {
+      &:nth-child(1) {
+        left: -5%;
+        top: 15%;
+        transform: scale(1.5);
+      }
+      &:nth-child(3) {
+        right: 5%;
+        top: 5%;
+        transform: scale(1.5);
+      }
+      &:nth-child(4) {
+        left: 5%;
+        top: 40%;
+        transform: scale(1.3);
+      }
+      &:nth-child(5) {
+        display: unset;
+      }
+      &:nth-child(6) {
+        right: -5%;
+        top: 35%;
+        transform: scale(1.3);
+      }
+      &:nth-child(9) {
+        display: unset;
+      }
+    }
+  }
+}

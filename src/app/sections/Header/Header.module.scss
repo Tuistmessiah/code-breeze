@@ -1,0 +1,52 @@
+@import '../../styles/imports.scss';
+
+.container {
+  color: $gc-secondary-anti;
+
+  overflow: hidden;
+
+  width: 100vw;
+  min-height: calc(50vh - #{$navbar-height});
+
+  padding: unset; // override
+
+  @include l {
+    min-height: calc(100vh - #{$navbar-height});
+  }
+
+  .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.inner-container {
+  min-height: 25rem;
+  padding: 0 3rem;
+  padding-right: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include sm {
+    margin-top: 5rem;
+  }
+
+  & > h2 {
+    margin-bottom: 1rem;
+  }
+
+  & > h3 {
+    margin-left: 2rem;
+  }
+
+  & > button {
+    width: 10rem;
+    margin-top: 5rem;
+  }
+}

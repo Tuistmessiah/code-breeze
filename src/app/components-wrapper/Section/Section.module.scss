@@ -1,0 +1,26 @@
+@import '../../styles/imports.scss';
+
+.container {
+  width: 100vw;
+  padding: $padding-normal;
+  overflow: hidden;
+
+  @include sm {
+    padding: $padding-sm;
+  }
+
+  @include md {
+    padding: $padding-md;
+  }
+
+  @include l {
+    padding: $padding-l;
+  }
+
+  @include xl {
+    padding: $padding-xl;
+  }
+}
+
+.inner-container {
+}

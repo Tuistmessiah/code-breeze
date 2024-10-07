@@ -1,0 +1,57 @@
+@import '../../styles/imports.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.label {
+  font-size: 1.3rem;
+}
+
+.input {
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  border: 2px solid rgb(5, 5, 5);
+
+  background: rgb(250, 250, 250);
+
+  &.textarea {
+    resize: none;
+  }
+
+  &::placeholder {
+    font-size: 0.9rem;
+
+    color: var(--gray-800);
+  }
+}
+
+@include sm {
+  .wrapper {
+    gap: 0.8rem;
+  }
+
+  .label {
+    font-size: 1.6rem;
+  }
+
+  .input {
+    &::placeholder {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.primary {
+  color: $gc-primary-anti;
+}
+
+.secondary {
+  color: $gc-secondary-anti;
+}
+
+.tertiary {
+  color: $gc-tertiary-anti;
+}

@@ -14,8 +14,11 @@ export default function AboutSection(props: AboutSectionProps) {
       <div className={styles['container']}>
         <h2>About Us</h2>
         <div className={styles['content']}>
-          <p>Whether you need a single expert or an extended team, we’re here to help. Built to scale, we deliver top-quality results—big or small.</p>
-          <Button label="Read more" variant={ButtonVariants.TERTIARY} />
+          <p>
+            Whether you need a single expert or an extended team, we’re here to help. Built to scale, we deliver
+            top-quality results—big or small.
+          </p>
+          <Button label="Read more" href={'/about'} variant={ButtonVariants.TERTIARY} />
         </div>
       </div>
     </section>

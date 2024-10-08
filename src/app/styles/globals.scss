@@ -46,6 +46,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

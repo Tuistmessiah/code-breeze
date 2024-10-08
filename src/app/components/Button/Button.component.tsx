@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { ComponentPropsWithoutRef } from 'react';
 
 import StyleUtils from '../../utils/style.utils';
@@ -15,11 +16,20 @@ export enum ButtonVariants {
 
 export interface ButtonComponentProps extends ComponentPropsWithoutRef<'button'> {
   label: string;
+  href?: string;
   variant?: ButtonVariants;
 }
 
 export default function Button(props: ButtonComponentProps) {
-  const { label, variant = ButtonVariants.PRIMARY, className, children, ...restProps } = props;
+  const { label, href, variant = ButtonVariants.PRIMARY, className, children, ...restProps } = props;
+
+  if (href) {
+    return (
+      <Link className={cn(s('container', variant), className)} href={href}>
+        {label}
+      </Link>
+    );
+  }
 
   return (
     <button className={cn(s('container', variant), className)} {...restProps}>

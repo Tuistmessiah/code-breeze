@@ -1,5 +1,7 @@
 'use client';
 
+import { useInView } from 'react-intersection-observer';
+
 import Section from '../../components-wrapper/Section/Section.component';
 import Button, { ButtonVariants } from '../../components/Button/Button.component';
 
@@ -8,16 +10,17 @@ import { LockOpen1Icon, GearIcon, PlayIcon, UploadIcon, GitHubLogoIcon, CodeIcon
 import StyleUtils from '../../utils/style.utils';
 import styles from './CTAIcons.module.scss';
 const s = StyleUtils.styleMixer(styles);
-import cn from 'classnames';
 
 export interface CTAIconsSectionProps {}
 
 export default function CTAIconsSection(props: CTAIconsSectionProps) {
   const {} = props;
 
+  const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
+
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
-      <div className={s('text-content')}>
+      <div className={s('text-content', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
         <h2>Interested in expanding your tools?</h2>
         <p>Discover how you can integrate more in your current toolstack.</p>
         <Button label="Contact Us" variant={ButtonVariants.PRIMARY} />

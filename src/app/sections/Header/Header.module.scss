@@ -21,6 +21,10 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+
+    & > img {
+      object-position: center;
+    }
   }
 }
 
@@ -33,10 +37,6 @@
   flex-direction: column;
   justify-content: center;
 
-  @include sm {
-    margin-top: 5rem;
-  }
-
   & > h2 {
     margin-bottom: 1rem;
   }
@@ -45,8 +45,24 @@
     margin-left: 2rem;
   }
 
+  & > a,
   & > button {
-    width: 10rem;
+    height: 5rem;
+    width: 15rem;
     margin-top: 5rem;
+
+    font-size: 1.3rem;
+  }
+}
+
+@include sm {
+  .inner-container {
+    margin-top: 5rem;
+  }
+
+  .bg-container.bg-container {
+    & > img {
+      object-position: center;
+    }
   }
 }

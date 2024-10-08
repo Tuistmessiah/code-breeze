@@ -1,0 +1,27 @@
+@import '../../styles/imports.scss';
+
+.container {
+  background-color: $gc-secondary;
+  color: $gc-secondary-anti;
+}
+
+.inner-container {
+  padding: 2rem;
+
+  & > h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  & > p {
+    margin-bottom: 1rem;
+  }
+}
+
+@include md {
+  .inner-container {
+    & > h2 {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 import { Asset } from '../../interfaces/assets.interface';
@@ -11,19 +12,30 @@ import StyleUtils from '../../utils/style.utils';
 import styles from './ImageText.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
+export enum VariantsITSection {
+  PRIMARY = 'primary',
+  SECONDARY = 'secondary',
+  TERTIARY = 'tertiary',
+}
+
 export interface ImageTextSectionProps {
   title: string;
-  subTitle?: string;
-  text?: string;
   image: Asset;
   imageToLeft?: boolean;
+  subTitle?: string;
+  text?: string;
+  variant?: VariantsITSection;
+  buttonLabel?: string;
+  buttonAction?: () => void;
 }
 
 export default function ImageTextSection(props: ImageTextSectionProps) {
-  const { title, subTitle, text, image, imageToLeft } = props;
+  const { title, variant = VariantsITSection.SECONDARY, subTitle, text, image, imageToLeft, buttonLabel, buttonAction } = props;
+
+  const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
 
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container', variant)} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
       {image?.url && (
         <div className={s('image-wrapper', imageToLeft ? 'image-left' : '')}>
           <Image src={image.url} alt={(image?.title || image?.description) as string} width={image.width} height={image.height} className={s('image')} />
@@ -38,13 +50,15 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
 
         {text && <p>{text}</p>}
 
-        <Button
-          label={'Learn More'}
-          variant={ButtonVariants.TERTIARY}
-          onClick={() => {
-            console.log('do something!');
-          }}
-        />
+        {buttonLabel && (
+          <Button
+            label={buttonLabel}
+            variant={ButtonVariants.TERTIARY}
+            onClick={() => {
+              buttonAction && buttonAction();
+            }}
+          />
+        )}
       </div>
     </Section>
   );

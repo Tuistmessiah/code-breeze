@@ -189,3 +189,14 @@ $icon-bg-anti: $gc-tertiary-anti;
     }
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

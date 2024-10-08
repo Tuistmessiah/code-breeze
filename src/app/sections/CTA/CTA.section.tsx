@@ -16,7 +16,7 @@ export default function CTASection(props: CTASectionProps) {
     <Section className={s('container')} innerClassName={s('inner-container')}>
       <h2>Still unsure?</h2>
       <p>Just give us a call or leave a quick message!</p>
-      <Button label={'Quick Contact'} variant={ButtonVariants.TERTIARY} />
+      <Button label={'Quick Contact'} href={'/contact'} variant={ButtonVariants.TERTIARY} />
     </Section>
   );
 }

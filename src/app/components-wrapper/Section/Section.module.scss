@@ -20,6 +20,10 @@
   @include xl {
     padding: $padding-xl;
   }
+
+  @include xxl {
+    padding: $padding-xxl;
+  }
 }
 
 .inner-container {

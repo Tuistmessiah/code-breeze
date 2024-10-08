@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 import Section from '../../components-wrapper/Section/Section.component';
@@ -20,19 +21,18 @@ export default function HeaderSection(props: HeaderSectionProps) {
       innerClassName={s('inner-container')}
       bgNode={
         <div className={s('bg-container')}>
-          <Image src="/images/code-breeze-banner.webp" alt="Background" layout="fill" objectFit="cover" objectPosition="center" />
+          <Image
+            src="https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg"
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       }
     >
       <h2>Innovative Solutions, Tailored for You.</h2>
       <h3>Delivering expertise and flexibility to meet your business goals.</h3>
-      <Button
-        label={'What we offer'}
-        variant={ButtonVariants.TERTIARY}
-        onClick={() => {
-          console.log('do something!');
-        }}
-      />
+      <Button label={'What we offer'} variant={ButtonVariants.TERTIARY} href={'/services'} />
     </Section>
   );
 }

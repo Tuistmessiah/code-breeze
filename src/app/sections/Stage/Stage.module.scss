@@ -1,0 +1,64 @@
+@import '../../styles/imports.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+
+  color: $gc-secondary-anti;
+
+  .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    & > img {
+      filter: brightness(60%) blur(1px);
+    }
+  }
+}
+
+.inner-container {
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  letter-spacing: 1px;
+
+  & > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  & > h5 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+
+    & > span {
+      color: $logo-light;
+    }
+  }
+}
+
+@include l {
+  .inner-container {
+    padding-right: 60%;
+
+    & > h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    & > h5 {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+  }
+}

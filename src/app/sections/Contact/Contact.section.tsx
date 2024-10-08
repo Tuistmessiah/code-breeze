@@ -19,7 +19,7 @@ export default function ContactSection(props: ContactSectionProps) {
 
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
-      <h2>Contact Us</h2>
+      <h1>Contact Us</h1>
       <div className={s('content')}>
         <div className={s('contact-form')}>
           <form onSubmit={handleSubmit}>

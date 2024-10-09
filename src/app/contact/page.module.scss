@@ -5,7 +5,6 @@ $map-height-mobile: 20vh;
 
 .container {
   & > section:nth-child(1) {
-    height: calc(100vh - #{$navbar-height} - #{$map-height-mobile} - 0.3rem);
   }
   & > section:nth-child(2) {
     height: $map-height-mobile;
@@ -16,6 +15,17 @@ $map-height-mobile: 20vh;
   .container {
     & > section:nth-child(1) {
       height: calc(100vh - #{$navbar-height} - #{$map-height} - 0.3rem);
+    }
+    & > section:nth-child(2) {
+      height: $map-height;
+    }
+  }
+}
+
+@include l {
+  .container {
+    & > section:nth-child(1) {
+      height: calc(100vh - #{$navbar-height} - #{$map-height} - #{$footer-height});
     }
     & > section:nth-child(2) {
       height: $map-height;

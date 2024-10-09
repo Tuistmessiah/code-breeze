@@ -4,34 +4,52 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
-  transition: height 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
   height: $navbar-height;
+  z-index: 1000;
+
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  &.scrolled {
-    height: $navbar-height;
-    background-color: #f8f8f8;
-  }
+  transition: height 0.3s ease, background-color 0.3s ease;
+
+  background-color: white;
 }
 
 .navContainer {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navLinks {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+
   list-style: none;
-  display: flex;
-  gap: 20px;
+  text-align: center;
+
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: white;
+
+  & > li:hover {
+    text-decoration: underline;
+  }
 
   a {
     text-decoration: none;
@@ -39,51 +57,37 @@
     font-size: 1rem;
   }
 
-  // Hidden by default on mobile
-  @media (max-width: 768px) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    gap: 10px;
-    display: none; // Hide the menu by default
-
-    &.showMenu {
-      display: flex; // Show the menu when toggled
-    }
+  &.showMenu {
+    display: flex;
   }
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: $logo-dark;
   text-decoration: none;
+
+  color: $logo-dark;
 }
 
-/* Hamburger Button */
 .hamburger {
-  display: none;
-  cursor: pointer;
-  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
   border: none;
   padding: 0;
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
+  cursor: pointer;
+
+  background: none;
 
   .bar {
     width: 25px;
     height: 3px;
-    background-color: #333;
+
     transition: 0.3s;
+    background-color: #333;
   }
 
   &.open .bar:nth-child(1) {
@@ -97,4 +101,59 @@
   &.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
+}
+
+@include l {
+  .navbar {
+    height: $navbar-height;
+    padding: 0;
+    background-color: white;
+
+    &.scrolled {
+      height: $navbar-height * 0.5;
+      background-color: #f8f8f8;
+
+      width: 50vw;
+      transform: translateX(50%);
+      margin-top: 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 1rem;
+
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+  }
+
+  .navContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navLinks {
+    position: static;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    border-bottom: unset;
+    opacity: 1;
+
+    a {
+      font-size: 1rem;
+    }
+
+    &.showMenu {
+      display: flex;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+.active {
+  text-decoration: underline;
 }

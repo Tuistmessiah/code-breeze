@@ -8,6 +8,8 @@
     "docker-down": "docker-compose down",
     "build": "next build",
     "start": "next start",
+    "start-pm2": "pm2 start npm --name code-breeze -- start",
+    "stop-pm2": "pm2 delete code-breeze",
     "lint": "next lint"
   },
   "dependencies": {

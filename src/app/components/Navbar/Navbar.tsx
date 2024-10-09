@@ -1,10 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+
 import styles from './Navbar.module.scss';
 import Link from 'next/link';
 
 const Navbar = () => {
+  const pathName = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // State to handle menu visibility
 
@@ -50,19 +53,16 @@ const Navbar = () => {
             setMenuOpen(false);
           }}
         >
-          <li>
+          <li className={`${pathName === '/' ? styles['active'] : ''}`}>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li className={`${pathName === '/services' ? styles['active'] : ''}`}>
             <Link href="/services">Services</Link>
           </li>
-          {/* <li>
-            <Link href="/pricing">Pricing</Link>
-          </li> */}
-          <li>
+          <li className={`${pathName === '/about' ? styles['active'] : ''}`}>
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li className={`${pathName === '/contact' ? styles['active'] : ''}`}>
             <Link href="/contact">Contact Us</Link>
           </li>
         </ul>

@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .content {
@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .contact-form {
@@ -34,9 +34,12 @@
   width: 100%;
   order: 1;
 
-  & > form > button {
-    margin-top: 2rem;
-    width: 100%;
+  & > form {
+    button {
+      margin-top: 2rem;
+      padding: 0.8rem;
+      width: 100%;
+    }
   }
 }
 
@@ -63,7 +66,7 @@
   }
 
   .info {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 
     a {
       color: #005dc7;
@@ -95,7 +98,18 @@
 }
 
 @include l {
+  .inner-container {
+    gap: 0.5rem;
+  }
+
   .contact-details {
     font-size: 1.2rem;
+  }
+
+  .contact-form {
+    textarea,
+    input {
+      padding: 0.8rem;
+    }
   }
 }

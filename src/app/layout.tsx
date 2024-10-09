@@ -4,8 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
 export const metadata = {
-  title: 'My Landing Page',
-  description: 'A great landing page!',
+  title: 'Code Breeze',
+  description: "It's a breeze!",
 };
 
 export default function RootLayout({
@@ -15,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
+        <link rel="icon" href="/favicon.ico?v=1" />
+      </head>
+      <body className="static-class">
+        <div className="page-top-placeholder" />
         <Navbar />
         {children}
         <Footer />

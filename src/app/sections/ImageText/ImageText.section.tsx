@@ -38,7 +38,7 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
     <Section className={s('container', variant)} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
       {image?.url && (
         <div className={s('image-wrapper', imageToLeft ? 'image-left' : '')}>
-          <Image src={image.url} alt={(image?.title || image?.description) as string} width={image.width} height={image.height} className={s('image')} />
+          <Image src={image.url} alt={((image?.title || image?.description) ?? title) as string} width={image.width} height={image.height} className={s('image')} />
         </div>
       )}
 

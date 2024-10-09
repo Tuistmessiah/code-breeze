@@ -55,7 +55,7 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
             label={buttonLabel}
             variant={ButtonVariants.TERTIARY}
             onClick={() => {
-              buttonAction && buttonAction();
+              if (buttonAction) buttonAction();
             }}
           />
         )}

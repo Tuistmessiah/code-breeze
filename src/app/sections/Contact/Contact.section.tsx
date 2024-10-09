@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { FormEvent } from 'react';
 
 import Section from '../../components-wrapper/Section/Section.component';
 import Button, { ButtonVariants } from '../../components/Button/Button.component';
@@ -10,12 +10,14 @@ import StyleUtils from '../../utils/style.utils';
 import styles from './Contact.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
-export interface ContactSectionProps {}
+export interface ContactSectionProps {
+  empty?: '';
+}
 
 export default function ContactSection(props: ContactSectionProps) {
   const {} = props;
 
-  const [status, setStatus] = useState<string | null>(null);
+  // const [status, setStatus] = useState<string | null>(null);
 
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
@@ -81,14 +83,14 @@ export default function ContactSection(props: ContactSectionProps) {
       });
 
       if (response.ok) {
-        setStatus('Email sent successfully!');
+        // setStatus('Email sent successfully!');
         form.reset();
       } else {
-        setStatus('Failed to send email.');
+        // setStatus('Failed to send email.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setStatus('Error sending email.');
+      // setStatus('Error sending email.');
     }
   }
 }

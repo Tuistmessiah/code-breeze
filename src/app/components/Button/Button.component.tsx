@@ -21,7 +21,7 @@ export interface ButtonComponentProps extends ComponentPropsWithoutRef<'button'>
 }
 
 export default function Button(props: ButtonComponentProps) {
-  const { label, href, variant = ButtonVariants.PRIMARY, className, children, ...restProps } = props;
+  const { label, href, variant = ButtonVariants.PRIMARY, className, ...restProps } = props;
 
   if (href) {
     return (

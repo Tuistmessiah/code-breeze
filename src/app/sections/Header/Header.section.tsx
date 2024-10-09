@@ -1,6 +1,5 @@
 'use client';
 
-import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 import Section from '../../components-wrapper/Section/Section.component';
@@ -10,7 +9,9 @@ import StyleUtils from '../../utils/style.utils';
 import style from './Header.module.scss';
 const s = StyleUtils.styleMixer(style);
 
-export interface HeaderSectionProps {}
+export interface HeaderSectionProps {
+  empty?: '';
+}
 
 export default function HeaderSection(props: HeaderSectionProps) {
   const {} = props;
@@ -21,12 +22,7 @@ export default function HeaderSection(props: HeaderSectionProps) {
       innerClassName={s('inner-container')}
       bgNode={
         <div className={s('bg-container')}>
-          <Image
-            src="https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg"
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-          />
+          <Image src="https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg" alt="Background" layout="fill" objectFit="cover" />
         </div>
       }
     >

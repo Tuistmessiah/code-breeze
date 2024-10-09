@@ -7,7 +7,9 @@ import StyleUtils from '../../utils/style.utils';
 import styles from './CTA.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
-export interface CTASectionProps {}
+export interface CTASectionProps {
+  empty?: '';
+}
 
 export default function CTASection(props: CTASectionProps) {
   const {} = props;

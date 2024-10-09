@@ -7,7 +7,9 @@ import styles from './Text.module.scss';
 const s = StyleUtils.styleMixer(styles);
 // import cn from 'classnames';
 
-export interface TextSectionProps {}
+export interface TextSectionProps {
+  empty?: '';
+}
 
 export default function TextSection(props: TextSectionProps) {
   const {} = props;

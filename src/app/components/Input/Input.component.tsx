@@ -5,7 +5,6 @@ import { ComponentPropsWithoutRef } from 'react';
 import StyleUtils from '../../utils/style.utils';
 import styles from './Input.module.scss';
 const s = StyleUtils.styleMixer(styles);
-import cn from 'classnames';
 
 export enum VariantsInput {
   PRIMARY = 'primary',

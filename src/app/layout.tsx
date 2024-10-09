@@ -1,4 +1,3 @@
-import localFont from 'next/font/local';
 import './styles/globals.scss';
 
 import Navbar from './components/Navbar/Navbar';

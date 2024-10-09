@@ -15,7 +15,9 @@ const s = StyleUtils.styleMixer(style);
 // ou maior ou repeat
 // scroll magic
 
-export interface ServicesSectionProps {}
+export interface ServicesSectionProps {
+  empty?: '';
+}
 
 export default function ServicesSection(props: ServicesSectionProps) {
   const {} = props;
@@ -37,30 +39,21 @@ export default function ServicesSection(props: ServicesSectionProps) {
           Our Services
         </h2> */}
         <div className={s('content')}>
-          <div
-            className={s('service', 'fade-in', scrolledInView1.inView ? 'fade-in-visible' : '')}
-            ref={scrolledInView1.ref}
-          >
+          <div className={s('service', 'fade-in', scrolledInView1.inView ? 'fade-in-visible' : '')} ref={scrolledInView1.ref}>
             <div className={s('icon-wrapper')}>
               <GlobeIcon />
             </div>
             <h3>Web Development</h3>
             <p>Building scalable and efficient websites tailored for your needs</p>
           </div>
-          <div
-            className={s('service', 'fade-in', scrolledInView2.inView ? 'fade-in-visible' : '')}
-            ref={scrolledInView2.ref}
-          >
+          <div className={s('service', 'fade-in', scrolledInView2.inView ? 'fade-in-visible' : '')} ref={scrolledInView2.ref}>
             <div className={s('icon-wrapper')}>
               <RocketIcon />
             </div>
             <h3>Mobile Apps</h3>
             <p>Building scalable and efficient websites tailored for your needs</p>
           </div>
-          <div
-            className={s('service', 'fade-in', scrolledInView3.inView ? 'fade-in-visible' : '')}
-            ref={scrolledInView3.ref}
-          >
+          <div className={s('service', 'fade-in', scrolledInView3.inView ? 'fade-in-visible' : '')} ref={scrolledInView3.ref}>
             <div className={s('icon-wrapper')}>
               <LayersIcon />
             </div>

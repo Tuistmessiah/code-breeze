@@ -11,7 +11,9 @@ import StyleUtils from '../../utils/style.utils';
 import styles from './CTAIcons.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
-export interface CTAIconsSectionProps {}
+export interface CTAIconsSectionProps {
+  empty?: '';
+}
 
 export default function CTAIconsSection(props: CTAIconsSectionProps) {
   const {} = props;

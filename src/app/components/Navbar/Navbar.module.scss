@@ -25,6 +25,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0 0;
 }
 
 .navLinks {
@@ -111,7 +113,6 @@
 
     &.scrolled {
       height: $navbar-height * 0.5;
-      background-color: #f8f8f8;
 
       width: 50vw;
       transform: translateX(50%);
@@ -127,6 +128,8 @@
   .navContainer {
     max-width: 1200px;
     margin: 0 auto;
+
+    padding: 0 2rem;
   }
 
   .navLinks {

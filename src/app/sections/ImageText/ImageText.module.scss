@@ -87,9 +87,6 @@
   }
 }
 
-@include sm {
-}
-
 @include md {
   .inner-container {
     flex-direction: row;
@@ -118,6 +115,15 @@
     & > p {
       margin-top: 2rem;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+@include l {
+  .content {
+    & > p {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
     }
   }
 }

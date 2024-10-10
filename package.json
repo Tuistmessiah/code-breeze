@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "start-pm2": "pm2 start npm --name code-breeze -- start",
+    "restart-pm2": "pm2 restart code-breeze",
     "stop-pm2": "pm2 delete code-breeze",
     "lint": "next lint"
   },

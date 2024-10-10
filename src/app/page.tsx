@@ -17,24 +17,26 @@ export default function HomePage() {
         <ImageTextSection
           title={'Simplicity and efficiency!'}
           subTitle={'Our Services'}
-          text={`We specialize in web development, mobile app development, and software solutions.
-          Our team of experts works closely with clients to understand their unique needs and deliver high-quality services.
+          text={`Specializing in web development, we also provide mobile services, and software solutions.
+            We are a small scale operation, meaning our closeness with the client and customization
+            capabilities will deliver a high-quality and suitable solution for you!
           `}
           image={{
-            url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
             width: 700,
             height: 700,
+            url: '/images/nordwood-themes-1.jpg',
           }}
           imageToLeft={true}
         />
         <ImageTextSection
-          title={'Simplicity and efficiency!'}
-          subTitle={'Our Services'}
-          text={`We specialize in web development, mobile app development, and software solutions.
-          Our team of experts works closely with clients to understand their unique needs and deliver high-quality services.
+          title={'Tech with Business'}
+          subTitle={'Our Work'}
+          text={`We are developers and get the best of both worlds: an engineer way of thinking for our tech solutions, 
+            making them manageable, scalable, efficient... and
+            a business mindset to your needs! Hand in hand, they both bring trust and results.
           `}
           image={{
-            url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
+            url: '/images/jakub-zerdzicki-1.jpg',
             width: 700,
             height: 700,
           }}

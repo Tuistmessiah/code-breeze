@@ -6,7 +6,7 @@
 }
 
 .inner-container {
-  padding: 2rem;
+  padding: 2rem 0rem;
 
   & > h2 {
     font-size: 1.3rem;
@@ -14,14 +14,44 @@
   }
 
   & > p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    &:nth-child(even) {
+      margin-right: 10rem;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 10rem;
+    }
   }
 }
 
 @include md {
   .inner-container {
+    padding: 4rem 4rem;
+
     & > h2 {
       font-size: 2rem;
+    }
+  }
+}
+
+@include l {
+  .inner-container {
+    padding: 6rem 15vw;
+  }
+}
+
+@include xxl {
+  .inner-container {
+    padding: 6rem 20vw;
+
+    & > h2 {
+      margin-bottom: 3rem;
+    }
+
+    & > p {
+      margin-bottom: 4rem;
     }
   }
 }

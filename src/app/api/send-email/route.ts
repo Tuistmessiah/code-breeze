@@ -28,6 +28,19 @@ export async function POST(req: Request) {
     // Send the email
     await transporter.sendMail(mailOptions);
 
+    const mailOptionsConfirm = {
+      from: `"Code Breeze" <${process.env.EMAIL_USER}>`,
+      to: email,
+      subject: `Your message was sent to Code Breeze :)`,
+      text: `Dear ${name}, \n\n Your message was delivered to our email at ${process.env.EMAIL_USER}.
+      \n\n We will contact you soon!
+      \n\n Kind regards,
+      \n Pedro Caetano (Code Breeze)`,
+    };
+
+    // Send the email
+    await transporter.sendMail(mailOptionsConfirm);
+
     console.info('SUCCESS: Email sent!');
     return NextResponse.json({ message: 'Email sent successfully!' });
   } catch (error) {

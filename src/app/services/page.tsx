@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <StageSection
         title={'Services'}
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
+          url: '/images/hazel-z-1.jpg',
           width: 700,
           height: 700,
         }}
@@ -30,9 +30,9 @@ export default function ServicesPage() {
       {/* Web Development Service */}
       <ImageTextFullSection
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
-          width: 700,
-          height: 700,
+          url: '/images/growtika-website.jpg',
+          width: 1500,
+          height: 800,
         }}
       >
         <>
@@ -93,9 +93,9 @@ export default function ServicesPage() {
       <ImageTextFullSection
         imageToRight
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
-          width: 700,
-          height: 700,
+          url: '/images/jakub-zerdzicki-mobile.jpg',
+          width: 1500,
+          height: 1500,
         }}
       >
         <>
@@ -144,9 +144,9 @@ export default function ServicesPage() {
       {/* Cloud Solutions */}
       <ImageTextFullSection
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
-          width: 700,
-          height: 700,
+          url: '/images/growtika-cloud-dev.jpg',
+          width: 1500,
+          height: 1500,
         }}
       >
         <>

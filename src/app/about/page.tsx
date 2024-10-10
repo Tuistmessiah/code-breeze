@@ -12,30 +12,33 @@ export default function AboutPage() {
       <StageSection
         title={'About us'}
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
-          width: 700,
-          height: 700,
+          url: '/images/marvin-meyer-1.jpg',
+          width: 1500,
+          height: 1500,
         }}
-        text={`Our developers are experts who actively engage in the fields they work in, 
-        leveraging real-world experience to deliver fast and efficient solutions. 
-        With our hands-on approach, we ensure that the technology we build is tailored to your needs, 
-        empowering your business with the tools necessary for success.`}
+        text={`
+          As a small but passionate tech company, we are driven by the principles of transparency, innovation, and freedom. 
+          We believe that every idea, no matter how small, 
+          has the potential to create real change, and we are committed to nurturing those ideas in an open and collaborative environment.
+          `}
       >
         <>
-          <span>Code Breeze</span> is a small and dynamic company that hires experienced developers. We are mostly
-          portuguese, but based in Utrecht, NL.
+          <span>Code Breeze</span> is a small and dynamic company that hires experienced developers. We are mostly portuguese, but based in Utrecht, NL.
         </>
       </StageSection>
       <TextSection />
       <ImageTextSection
-        title={'Transparent, innovative, dependable'}
-        subTitle={'Our Services'}
-        text={`At CodeBreeze, we believe in transparency and innovation. 
-        Our team is dedicated to providing top-notch coding services with clear terms and exceptional customer support. 
-        We are available 24/7 to assist you with any coding needs, making your experience hassle-free.
+        title={'Transparent, dedicated, free'}
+        subTitle={'Our Work Ethic'}
+        text={`Transparency and dedication. These are our core values. To provide top-notch coding services with clear terms
+           and exceptional customer support. Available 24/7 to assist you with any coding needs, making your experience hassle-free.
+           Apart from that, we believe all of us is free, to express what we want and how we want it. There is no space for censonring in
+           Code Breeze and everyone is supported to speak their mind. In the end, its the relations we create that make us more that the sum of 
+           each individual...
+           at Code Breeze, we don’t just create technology – we build connections that last!
       `}
         image={{
-          url: 'https://www.agilitypr.com/wp-content/uploads/2020/02/technology-1-1.jpg',
+          url: '/images/jud-mackrill-1.jpg',
           width: 700,
           height: 700,
         }}

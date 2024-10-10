@@ -23,6 +23,7 @@
 
 .inner-container {
   height: 30rem;
+  padding-right: 0%;
 
   display: flex;
   flex-direction: column;
@@ -43,6 +44,18 @@
     & > span {
       color: $logo-light;
     }
+  }
+}
+
+@include xs {
+  .inner-container {
+    padding-right: 20%;
+  }
+}
+
+@include sm {
+  .inner-container {
+    padding-right: 40%;
   }
 }
 

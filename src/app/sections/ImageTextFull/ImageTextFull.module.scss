@@ -66,6 +66,8 @@
 
 @include l {
   .content {
+    margin-left: -7vw;
+
     .image-wrapper {
       position: relative;
       right: unset;
@@ -83,6 +85,9 @@
     }
 
     &.image-right {
+      margin-left: unset;
+      margin-right: -7vw;
+
       .image-wrapper {
         order: 1;
       }

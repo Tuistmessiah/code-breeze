@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 
 import Section from '../../components-wrapper/Section/Section.component';
 import Button, { ButtonVariants } from '../../components/Button/Button.component';
@@ -17,7 +17,15 @@ export interface ContactSectionProps {
 export default function ContactSection(props: ContactSectionProps) {
   const {} = props;
 
-  // const [status, setStatus] = useState<string | null>(null);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'sent-but' | 'error'>('idle');
+
+  useEffect(() => {
+    if (status === 'sent' || status === 'error' || status === 'sent-but') {
+      setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+    }
+  }, [status]);
 
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
@@ -28,7 +36,7 @@ export default function ContactSection(props: ContactSectionProps) {
             <Input placeholder="Name" id="name" variant={VariantsInput.SECONDARY}></Input>
             <Input placeholder="Email" id="email" variant={VariantsInput.SECONDARY}></Input>
             <Input isTextarea={true} placeholder="Message" id="message" variant={VariantsInput.SECONDARY}></Input>
-            <Button label={'Send'} variant={ButtonVariants.TERTIARY} type="submit" />
+            <Button className={s('button', status)} label={buttonLabel(status)} variant={ButtonVariants.TERTIARY} type="submit" />
           </form>
         </div>
         <div className={s('contact-details')}>
@@ -64,6 +72,7 @@ export default function ContactSection(props: ContactSectionProps) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setStatus('sending');
 
     const form = event.currentTarget;
 
@@ -83,14 +92,31 @@ export default function ContactSection(props: ContactSectionProps) {
       });
 
       if (response.ok) {
-        // setStatus('Email sent successfully!');
         form.reset();
+        setStatus('sent');
       } else {
-        // setStatus('Failed to send email.');
+        setStatus('sent-but');
       }
     } catch (error) {
-      console.error('Error:', error);
-      // setStatus('Error sending email.');
+      setStatus('error');
     }
+  }
+}
+
+/** Labels for button based on status */
+function buttonLabel(status: 'idle' | 'sending' | 'sent' | 'sent-but' | 'error') {
+  switch (status) {
+    case 'idle':
+      return 'Send';
+    case 'sending':
+      return 'Sending';
+    case 'error':
+      return 'Try again!';
+    case 'sent':
+      return 'Thank you!';
+    case 'sent-but':
+      return 'Message sent! Is your email valid?';
+    default:
+      return 'idle';
   }
 }

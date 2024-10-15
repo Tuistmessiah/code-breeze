@@ -25,7 +25,7 @@ export default function CTAIconsSection(props: CTAIconsSectionProps) {
       <div className={s('text-content', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
         <h2>Interested in expanding your tools?</h2>
         <p>Discover how you can integrate more in your current toolstack.</p>
-        <Button label="Contact Us" variant={ButtonVariants.PRIMARY} />
+        <Button label="Contact Us" variant={ButtonVariants.PRIMARY} href={'/contact'} />
       </div>
 
       <div className={s('icons-content')}>

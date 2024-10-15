@@ -12,7 +12,13 @@ export default function HomePage() {
   return (
     <>
       <main className={cx(styles['container'], 'page')}>
-        <HeaderSection />
+        <HeaderSection
+          title="Make your business website or app </>"
+          text="Small or big, meet your business goals with us. No Wordpress or web builders, 100% custom made quality websites. Fast, light, SEO 100/100."
+          buttonLabel="What we offer"
+          buttonHref="/services"
+          imageSrc="/images/code-breeze-3.webp"
+        />
         <ServicesSection />
         <ImageTextSection
           title={'Simplicity and efficiency!'}

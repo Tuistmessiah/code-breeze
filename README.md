@@ -18,3 +18,8 @@ Add `.env` file with credentials from gmail App Password:
 EMAIL_USER=
 EMAIL_PASS=
 ```
+
+## Deployment
+
+- Enter VPS, git pull changes from main
+- Do `npm run build` and `npm run restart-pm2`

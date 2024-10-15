@@ -1,0 +1,56 @@
+@import '@styles/imports.scss';
+
+.container {
+  top: 1747px;
+  left: 770px;
+  width: 215px;
+  height: 53px;
+
+  padding: 0px 8px;
+  border: 0;
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+
+  background-color: inherit;
+}
+
+.primary {
+  background-color: $gc-primary;
+  color: $gc-primary-anti;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: darken($gc-primary, 10%);
+  }
+}
+
+.secondary {
+  background-color: $gc-secondary;
+  color: $gc-secondary-anti;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: darken($gc-secondary, 10%);
+  }
+}
+
+.tertiary {
+  background-color: $gc-tertiary;
+  color: $gc-tertiary-anti;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: darken($gc-tertiary, 10%);
+  }
+}

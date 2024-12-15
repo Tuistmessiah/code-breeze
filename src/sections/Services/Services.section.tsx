@@ -17,7 +17,10 @@ export interface ServicesSectionProps {
 }
 
 export default function ServicesSection({ services }: ServicesSectionProps) {
-  const scrolledInViews = services.map((_, index) => useInView({ threshold: 0.6, delay: index * 300, triggerOnce: true }));
+  const scrolledInView1 = useInView({ threshold: 0.6, delay: 100, triggerOnce: true });
+  const scrolledInView2 = useInView({ threshold: 0.6, delay: 400, triggerOnce: true });
+  const scrolledInView3 = useInView({ threshold: 0.6, delay: 800, triggerOnce: true });
+  const scrolledInViews = [scrolledInView1, scrolledInView2, scrolledInView3];
 
   return (
     <section className={s('section', 'section')}>

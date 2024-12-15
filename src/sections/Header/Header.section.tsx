@@ -29,8 +29,9 @@ function generateRandomStyles() {
   const randomValue = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
   const range = 200;
 
-  return [...arrayOfIcons, ...arrayOfIcons].map((Icon) => (
+  return [...arrayOfIcons, ...arrayOfIcons].map((Icon, index) => (
     <Icon
+      key={index}
       style={{
         transform: `translate(${randomValue(-range, range)}vw, ${randomValue(-range, range)}vh) scale(${randomValue(1, 4)})`,
         color: `hsl(${randomValue(200, 240)}, ${randomValue(60, 100)}%, ${randomValue(60, 80)}%)`,

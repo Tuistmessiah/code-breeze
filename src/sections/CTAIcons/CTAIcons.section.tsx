@@ -12,20 +12,20 @@ import styles from './CTAIcons.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
 export interface CTAIconsSectionProps {
-  empty?: '';
+  title: string;
+  description: string;
+  buttonLabel: string;
 }
 
-export default function CTAIconsSection(props: CTAIconsSectionProps) {
-  const {} = props;
-
+export default function CTAIconsSection({ title, description, buttonLabel }: CTAIconsSectionProps) {
   const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
 
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
       <div className={s('text-content', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
-        <h2>Interested in expanding your tools?</h2>
-        <p>Discover how you can integrate more in your current toolstack.</p>
-        <Button label="Contact Us" variant={ButtonVariants.PRIMARY} href={'/contact'} />
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <Button label={buttonLabel} variant={ButtonVariants.PRIMARY} href={'/contact'} />
       </div>
 
       <div className={s('icons-content')}>

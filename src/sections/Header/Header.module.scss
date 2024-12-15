@@ -1,7 +1,7 @@
 @import '../../styles/imports.scss';
 
 .container {
-  background-color: rgba(22, 30, 61, 0.8);
+  background-color: rgba(22, 30, 61, 1);
   color: $gc-secondary-anti;
 
   overflow: hidden;
@@ -47,10 +47,27 @@
   & > button {
     height: 5rem;
     width: 15rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     z-index: 1;
 
     font-size: 1.3rem;
+  }
+
+  & > svg {
+    width: 100%;
+    height: 30rem;
+    z-index: 3;
+  }
+
+  .loose-icons {
+    position: absolute;
+    left: -100vw;
+    top: -100vh;
+    height: 200vh;
+    width: 200vw;
+    pointer-events: none;
+
+    animation: slow-rotate 200s infinite linear;
   }
 }
 
@@ -65,11 +82,15 @@
     margin-bottom: 3rem;
 
     padding: 3rem 3rem;
-    padding-right: 50%;
+    padding-right: 10%;
     padding-left: 10%;
 
+    & > svg {
+      width: 70%;
+    }
+
     & > h3 {
-      margin-left: 2rem;
+      max-width: 30rem;
     }
   }
 
@@ -83,5 +104,14 @@
 @include l {
   .container {
     min-height: calc(100vh - #{$navbar-height} - 0.8rem);
+  }
+}
+
+@keyframes slow-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

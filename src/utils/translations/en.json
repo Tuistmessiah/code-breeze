@@ -1,0 +1,181 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "header": {
+      "description": "Small or big, meet your business goals with us. Let us help you. Let it flow.",
+      "button": "What we offer"
+    },
+    "services": {
+      "title": "Simplicity and efficiency!",
+      "subtitle": "Our Services",
+      "description": "Specializing in web development, we also provide web-app services, and software solutions. We are a small-scale operation, meaning our closeness with the client and customization capabilities will deliver a high-quality and suitable solution for you!"
+    },
+    "work": {
+      "title": "Tech with Business",
+      "subtitle": "Our Work",
+      "description": "We are developers and get the best of both worlds: an engineer way of thinking for our tech solutions, making them manageable, scalable, and efficient... and a business mindset to your needs! Hand in hand, they both bring trust and results."
+    },
+    "services-header": [
+      {
+        "title": "Web Development",
+        "description": "No web builders, 100% custom made, fast, light, SEO 100/100"
+      },
+      {
+        "title": "Web Apps",
+        "description": "Expand and achieve your goals with mobile web apps"
+      },
+      {
+        "title": "Cloud Solutions",
+        "description": "Scalable and efficient websites tailored to your needs"
+      }
+    ],
+    "about": {
+      "title": "About Us",
+      "description": "Whether you need a single expert or an extended team, we’re here to help. Built to scale, we deliver top-quality results—big or small.",
+      "button": "Read more"
+    },
+    "ctaIcons": {
+      "title": "Interested in expanding your tools?",
+      "description": "Discover how you can integrate more in your current toolstack.",
+      "buttonLabel": "Contact Us"
+    },
+    "cta": {
+      "title": "Still unsure?",
+      "description": "Just give us a call or leave a quick message!",
+      "buttonLabel": "Quick Contact"
+    }
+  },
+  "services": {
+    "stage": {
+      "title": "Services",
+      "text": "We take care of everything, from design to deployment and ongoing maintenance, so you can focus on growing your business. Whether you need a website or a web app, our hands-on approach guarantees fast, efficient, and reliable results.",
+      "content": "we specialize in delivering comprehensive digital solutions, from web development to mobile apps. Our team of experts ensures every project is tailored to meet your business needs, providing a seamless and scalable experience."
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "content": [
+        "We will take care of everything so your business can have a fully functional website. From design to hosting, we will handle the technical details, so you can focus on running your business. Whether you prefer a custom design or a template, we deliver a care-free experience.",
+        "What's Included",
+        "Our services cover everything needed to get your website online, with ongoing support to keep it running smoothly.",
+        [
+          "Custom or Template Design: Choose between a unique design or a quick, high-quality template.",
+          "Responsive Development: Ensuring your website works well on all devices.",
+          "Domain and Hosting Setup: We handle domain registration and secure hosting for you.",
+          "Integration of Features: From e-commerce to booking systems, we integrate what your business needs.",
+          "SEO Optimization: Built-in SEO to improve your website’s visibility in search engines."
+        ],
+        "Ongoing Support as a Service",
+        "Unlike typical one-off website projects, our service goes beyond just development. We continue to manage and maintain your website, ensuring it stays updated and functional over time.",
+        [
+          "We perform updates, backups, and security checks to keep your site running smoothly.",
+          "We monitor and manage your hosting for consistent performance.",
+          "We're here to assist with any technical issues you may encounter.",
+          "As your needs grow, we can integrate new features and services."
+        ]
+      ]
+    },
+    "webApp": {
+      "title": "Web App",
+      "content": [
+        "We develop web apps that are scalable, efficient, and tailored to meet your unique mobile needs. Our team handles everything, from design to deployment, ensuring your app runs smoothly across all devices and platforms.",
+        "What's Included",
+        "Our web app service provides all the essentials for building and maintaining a high-performance app-like experience.",
+        [
+          "Custom or Template Design: Choose between a tailored design or a fast, template-based approach.",
+          "Cross-Platform Compatibility: Ensuring your app works on iOS and Android seamlessly.",
+          "App Deployment: We manage app store submissions and updates.",
+          "Feature Integration: Add key functionalities, such as notifications, payments, and more."
+        ],
+        "Ongoing Support as a Service",
+        "We don’t just launch your app—we maintain it, ensuring updates and new features are added as your business grows.",
+        [
+          "Regular updates and bug fixes to keep your app running efficiently.",
+          "We're available for troubleshooting and updates.",
+          "As your needs evolve, we’ll help add new features or integrations."
+        ]
+      ]
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "content": [
+        "Our cloud solutions provide scalable, secure, and efficient infrastructure tailored to your business needs. We design and implement cloud systems that grow with your company, ensuring smooth operations and flexibility for future expansion.",
+        "What's Included",
+        "Our cloud services cover everything from setup to continuous management, giving you a robust platform without the complexity.",
+        [
+          "Custom Architecture: We design cloud infrastructures that align with your specific business goals.",
+          "Seamless Integration: We integrate cloud services with your existing systems for a smooth transition.",
+          "Data Security: Implementing best practices to ensure your data is safe and fully compliant.",
+          "Automated Scalability: Dynamic scaling of resources based on your business demand."
+        ],
+        "Ongoing Support as a Service",
+        "We don’t just set up your cloud infrastructure; we offer continuous support and optimization to ensure it runs efficiently over time.",
+        [
+          "We keep an eye on your systems to ensure optimal performance.",
+          "Constant updates and improvements to keep your infrastructure up to date.",
+          "Immediate response and resolution for any technical issues that arise."
+        ]
+      ]
+    },
+    "cta": {
+      "title": "Still unsure?",
+      "description": "Just give us a call or leave a quick message!",
+      "buttonLabel": "Quick Contact"
+    }
+  },
+  "about": {
+    "stage": {
+      "title": "About Us",
+      "text": "As a small but passionate tech company, we are driven by the principles of transparency, innovation, and freedom. We believe that every idea, no matter how small, has the potential to create real change, and we are committed to nurturing those ideas in an open and collaborative environment.",
+      "content": "is a small and dynamic company that hires experienced developers. We are mostly Portuguese, but based in Utrecht, NL."
+    },
+    "textSection": {
+      "title": "Who We Are",
+      "paragraphs": [
+        "At our small but dynamic company based in Utrecht, we bring together a talented team of five remote web developers from Portugal, each with expertise in different areas of web development. Our team thrives on collaboration, working across borders to create innovative and effective digital solutions tailored to the unique needs of our clients. Despite being a small company, we believe in delivering big results by harnessing the skills and creativity of our diverse team.",
+        "Our developers specialize in various areas of web development, from front-end design and user experience to backend engineering and database management. This range of expertise allows us to handle projects holistically, ensuring that every aspect of a web application is carefully crafted and optimized. We take pride in staying current with the latest technologies and frameworks to deliver scalable and efficient solutions that meet the evolving demands of the digital landscape.",
+        "Although we work remotely, we are committed to maintaining strong communication and collaboration. Our base in Utrecht serves as the hub of our operations, while our Portuguese team members bring their unique perspectives and skills to each project. Together, we create seamless, high-quality web experiences for businesses, whether it’s building a new platform or enhancing an existing digital presence."
+      ]
+    },
+    "imgTextSection": {
+      "title": "Transparent, dedicated, free",
+      "subTitle": "Our Work Ethic",
+      "text": "Transparency and dedication. These are our core values. We provide top-notch coding services with clear terms and exceptional customer support. Available 24/7 to assist you with any coding needs, making your experience hassle-free. Apart from that, we believe everyone is free to express what they want and how they want it. There is no space for censorship at Code Breeze, and everyone is encouraged to speak their mind. In the end, it’s the relationships we create that make us more than the sum of each individual... at Code Breeze, we don’t just create technology – we build connections that last!"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "contactForm": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "buttonLabels": {
+        "idle": "Send",
+        "sending": "Sending",
+        "error": "Try again!",
+        "sent": "Thank you!",
+        "sentBut": "Message sent! Is your email valid?"
+      }
+    },
+    "contactDetails": {
+      "detailsTitle": "Details",
+      "office": {
+        "label": "Office Address",
+        "address": "Poortstraat, Utrecht, The Netherlands",
+        "link": "https://www.google.com/maps?q=52.0986,5.1355"
+      },
+      "phone": {
+        "label": "Phone / WhatsApp",
+        "number": "+351 935 886 183 (PT)"
+      },
+      "email": {
+        "label": "Email",
+        "address": "info@codebreeze.org"
+      }
+    }
+  }
+}

@@ -52,6 +52,10 @@
 
     height: 10rem;
 
+    & > p {
+      text-align: center;
+    }
+
     .icon-wrapper {
       height: 3rem;
       width: 3rem;

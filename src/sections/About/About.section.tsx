@@ -5,19 +5,19 @@ import styles from './About.module.scss';
 import cn from 'classnames';
 
 export interface AboutSectionProps {
-  empty?: '';
+  title: string;
+  description: string;
+  buttonLabel: string;
 }
 
-export default function AboutSection(props: AboutSectionProps) {
-  const {} = props;
-
+export default function AboutSection({ title, description, buttonLabel }: AboutSectionProps) {
   return (
     <section className={cn(styles['section'], 'section')}>
       <div className={styles['container']}>
-        <h2>About Us</h2>
+        <h2>{title}</h2>
         <div className={styles['content']}>
-          <p>Whether you need a single expert or an extended team, we’re here to help. Built to scale, we deliver top-quality results—big or small.</p>
-          <Button label="Read more" href={'/about'} variant={ButtonVariants.TERTIARY} />
+          <p>{description}</p>
+          <Button label={buttonLabel} href={'/about'} variant={ButtonVariants.TERTIARY} />
         </div>
       </div>
     </section>

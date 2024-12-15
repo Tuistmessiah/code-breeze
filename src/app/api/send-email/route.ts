@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import * as nodemailer from 'nodemailer';
+
+export async function GET() {
+  return 'ok';
+}
 
 export async function POST(req: Request) {
   try {

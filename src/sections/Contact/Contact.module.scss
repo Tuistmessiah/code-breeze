@@ -41,6 +41,10 @@
       width: 100%;
     }
 
+    input {
+      letter-spacing: 1px;
+    }
+
     textarea,
     input {
       border-radius: $b-radius-sm;
@@ -62,6 +66,7 @@
   justify-content: flex-end;
 
   font-size: 0.9rem;
+  letter-spacing: 1px;
 
   background-color: $gc-primary;
   color: $gc-primary-anti;

@@ -70,6 +70,11 @@
   text-decoration: none;
 
   color: $logo-dark;
+
+  & > svg {
+    width: 15rem;
+    height: 70px;
+  }
 }
 
 .hamburger {
@@ -126,6 +131,16 @@
       padding: 1rem;
 
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      .navContainer {
+        .logo {
+          display: flex;
+          & > svg {
+            width: 5rem;
+            height: 30px;
+          }
+        }
+      }
     }
   }
 
@@ -133,7 +148,7 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    padding: 0 2rem;
+    padding: 0 6rem;
   }
 
   .navLinks {

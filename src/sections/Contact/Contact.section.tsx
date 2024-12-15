@@ -11,12 +11,28 @@ import styles from './Contact.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
 export interface ContactSectionProps {
-  empty?: '';
+  title: string;
+  contactForm: {
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    messagePlaceholder: string;
+    buttonLabels: {
+      idle: string;
+      sending: string;
+      error: string;
+      sent: string;
+      'sent-but': string; // Use quotes for keys with special characters
+    };
+  };
+  contactDetails: {
+    detailsTitle: string;
+    office: { label: string; address: string; link: string };
+    phone: { label: string; number: string };
+    email: { label: string; address: string };
+  };
 }
 
-export default function ContactSection(props: ContactSectionProps) {
-  const {} = props;
-
+export default function ContactSection({ title, contactForm, contactDetails }: ContactSectionProps) {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'sent-but' | 'error'>('idle');
 
   useEffect(() => {
@@ -29,39 +45,39 @@ export default function ContactSection(props: ContactSectionProps) {
 
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
-      <h1>Contact Us</h1>
+      <h1>{title}</h1>
       <div className={s('content')}>
         <div className={s('contact-form')}>
           <form onSubmit={handleSubmit}>
-            <Input placeholder="Name" id="name" variant={VariantsInput.SECONDARY}></Input>
-            <Input placeholder="Email" id="email" variant={VariantsInput.SECONDARY}></Input>
-            <Input isTextarea={true} placeholder="Message" id="message" variant={VariantsInput.SECONDARY}></Input>
-            <Button className={s('button', status)} label={buttonLabel(status)} variant={ButtonVariants.TERTIARY} type="submit" />
+            <Input placeholder={contactForm.namePlaceholder} id="name" variant={VariantsInput.SECONDARY} />
+            <Input placeholder={contactForm.emailPlaceholder} id="email" variant={VariantsInput.SECONDARY} />
+            <Input isTextarea={true} placeholder={contactForm.messagePlaceholder} id="message" variant={VariantsInput.SECONDARY} />
+            <Button className={s('button', status)} label={contactForm.buttonLabels[status]} variant={ButtonVariants.TERTIARY} type="submit" />
           </form>
         </div>
         <div className={s('contact-details')}>
-          <h3>Details</h3>
+          <h3>{contactDetails.detailsTitle}</h3>
           <div className={s('info')}>
-            <p>Office Address</p>
+            <p>{contactDetails.office.label}</p>
             <p>
               <strong>
-                <a href="https://www.google.com/maps?q=52.0986,5.1355" target="_blank" rel="noopener noreferrer">
-                  Poortstraat, Utrecht, The Netherlands
+                <a href={contactDetails.office.link} target="_blank" rel="noopener noreferrer">
+                  {contactDetails.office.address}
                 </a>
               </strong>
             </p>
           </div>
           <div className={s('info')}>
-            <p>Phone</p>
+            <p>{contactDetails.phone.label}</p>
             <p>
-              <strong>+351 935886183</strong>
+              <strong>{contactDetails.phone.number}</strong>
             </p>
           </div>
           <div className={s('info')}>
-            <p>Email</p>
+            <p>{contactDetails.email.label}</p>
             <p>
               <strong>
-                <a href="mailto:pedro.mpl.caetano@gmail.com">pedro.mpl.caetano@gmail.com</a>
+                <a href={`mailto:${contactDetails.email.address}`}>{contactDetails.email.address}</a>
               </strong>
             </p>
           </div>
@@ -100,23 +116,5 @@ export default function ContactSection(props: ContactSectionProps) {
     } catch (error) {
       setStatus('error');
     }
-  }
-}
-
-/** Labels for button based on status */
-function buttonLabel(status: 'idle' | 'sending' | 'sent' | 'sent-but' | 'error') {
-  switch (status) {
-    case 'idle':
-      return 'Send';
-    case 'sending':
-      return 'Sending';
-    case 'error':
-      return 'Try again!';
-    case 'sent':
-      return 'Thank you!';
-    case 'sent-but':
-      return 'Message sent! Is your email valid?';
-    default:
-      return 'idle';
   }
 }

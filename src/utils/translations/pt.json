@@ -1,0 +1,181 @@
+{
+  "navbar": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "contact": "Contacte-nos"
+  },
+  "home": {
+    "header": {
+      "description": "Pequeno ou grande, alcance os seus objetivos de negócio connosco. Deixe-nos ajudar. Deixe fluir.",
+      "button": "O que oferecemos"
+    },
+    "services": {
+      "title": "Simplicidade e eficiência!",
+      "subtitle": "Os Nossos Serviços",
+      "description": "Especializados em desenvolvimento web, também oferecemos serviços de aplicações web e soluções de software. Somos uma operação de pequena escala, o que significa que a nossa proximidade com os clientes e capacidades de personalização entregam uma solução de alta qualidade e adequada para si!"
+    },
+    "work": {
+      "title": "Tecnologia com Negócios",
+      "subtitle": "O Nosso Trabalho",
+      "description": "Somos programadores e aproveitamos o melhor de dois mundos: uma mentalidade de engenharia para as nossas soluções tecnológicas, tornando-as geríveis, escaláveis e eficientes... e uma mentalidade empresarial adaptada às suas necessidades! Juntas, estas abordagens trazem confiança e resultados."
+    },
+    "services-header": [
+      {
+        "title": "Desenvolvimento Web",
+        "description": "Sem web builders, 100% personalizado, rápido, leve e com SEO 100/100"
+      },
+      {
+        "title": "Aplicações Web",
+        "description": "Expanda e alcance os seus objetivos com aplicações web móveis"
+      },
+      {
+        "title": "Soluções Cloud",
+        "description": "Sites escaláveis e eficientes, adaptados às suas necessidades"
+      }
+    ],
+    "about": {
+      "title": "Sobre Nós",
+      "description": "Seja para uma necessidade específica ou para uma equipa alargada, estamos aqui para ajudar. Preparados para escalar, entregamos resultados de alta qualidade — grandes ou pequenos.",
+      "button": "Ler mais"
+    },
+    "ctaIcons": {
+      "title": "Interessado em expandir as suas ferramentas?",
+      "description": "Descubra como pode integrar mais na sua stack de ferramentas atual.",
+      "buttonLabel": "Contacte-nos"
+    },
+    "cta": {
+      "title": "Ainda indeciso?",
+      "description": "Basta ligar-nos ou deixar uma mensagem rápida!",
+      "buttonLabel": "Contacto Rápido"
+    }
+  },
+  "services": {
+    "stage": {
+      "title": "Serviços",
+      "text": "Cuidamos de tudo, desde o design à implementação e manutenção contínua, para que se possa focar no crescimento do seu negócio. Quer precise de um website ou de uma aplicação web, a nossa abordagem prática garante resultados rápidos, eficientes e fiáveis.",
+      "content": "somos especializados em fornecer soluções digitais abrangentes, desde o desenvolvimento web até aplicações móveis. A nossa equipa de especialistas assegura que cada projeto é ajustado às necessidades do seu negócio, proporcionando uma experiência escalável e sem falhas."
+    },
+    "webDevelopment": {
+      "title": "Desenvolvimento Web",
+      "content": [
+        "Cuidamos de tudo para que o seu negócio possa ter um website totalmente funcional. Desde o design à hospedagem, tratamos dos detalhes técnicos para que se possa focar na gestão do seu negócio. Quer prefira um design personalizado ou um modelo, garantimos uma experiência sem complicações.",
+        "O que está incluído",
+        "Os nossos serviços cobrem tudo o que é necessário para colocar o seu website online, com suporte contínuo para o manter a funcionar sem problemas.",
+        [
+          "Design Personalizado ou Modelo: Escolha entre um design único ou um modelo rápido e de alta qualidade.",
+          "Desenvolvimento Responsivo: Garantimos que o seu website funciona bem em todos os dispositivos.",
+          "Configuração de Domínio e Hospedagem: Tratamos do registo do domínio e da hospedagem segura por si.",
+          "Integração de Funcionalidades: Desde e-commerce a sistemas de reservas, integramos o que o seu negócio precisa.",
+          "Otimização SEO: SEO integrado para melhorar a visibilidade do seu website nos motores de busca."
+        ],
+        "Suporte Contínuo como Serviço",
+        "Ao contrário de projetos de websites únicos, o nosso serviço vai além do desenvolvimento. Continuamos a gerir e a manter o seu website, garantindo que está sempre atualizado e funcional.",
+        [
+          "Realizamos atualizações, backups e verificações de segurança para manter o seu site a funcionar sem problemas.",
+          "Monitorizamos e gerimos a sua hospedagem para garantir desempenho consistente.",
+          "Estamos disponíveis para ajudar com quaisquer questões técnicas que possam surgir.",
+          "À medida que as suas necessidades crescem, podemos integrar novas funcionalidades e serviços."
+        ]
+      ]
+    },
+    "webApp": {
+      "title": "Aplicações Web",
+      "content": [
+        "Desenvolvemos aplicações web que são escaláveis, eficientes e ajustadas às suas necessidades móveis únicas. A nossa equipa trata de tudo, desde o design à implementação, garantindo que a sua aplicação funciona sem problemas em todos os dispositivos e plataformas.",
+        "O que está incluído",
+        "O nosso serviço de aplicações web oferece tudo o que é essencial para construir e manter uma aplicação de alto desempenho.",
+        [
+          "Design Personalizado ou Modelo: Escolha entre um design ajustado ou uma abordagem rápida baseada em modelos.",
+          "Compatibilidade Multiplataforma: Garantimos que a sua aplicação funciona perfeitamente em iOS e Android.",
+          "Implementação de Aplicações: Gerimos o envio e as atualizações nas lojas de aplicações.",
+          "Integração de Funcionalidades: Adicione funcionalidades-chave, como notificações, pagamentos e muito mais."
+        ],
+        "Suporte Contínuo como Serviço",
+        "Não nos limitamos a lançar a sua aplicação — mantemo-la, garantindo atualizações e novas funcionalidades à medida que o seu negócio cresce.",
+        [
+          "Atualizações regulares e correções de bugs para manter a sua aplicação a funcionar eficientemente.",
+          "Estamos disponíveis para resolver problemas técnicos e realizar atualizações.",
+          "À medida que as suas necessidades evoluem, ajudamos a adicionar novas funcionalidades ou integrações."
+        ]
+      ]
+    },
+    "cloudSolutions": {
+      "title": "Soluções Cloud",
+      "content": [
+        "As nossas soluções cloud oferecem uma infraestrutura escalável, segura e eficiente, ajustada às necessidades do seu negócio. Desenhamos e implementamos sistemas cloud que crescem com a sua empresa, garantindo operações fluidas e flexibilidade para futuras expansões.",
+        "O que está incluído",
+        "Os nossos serviços cloud cobrem desde a configuração à gestão contínua, proporcionando uma plataforma robusta sem complexidade.",
+        [
+          "Arquitetura Personalizada: Desenhamos infraestruturas cloud alinhadas com os objetivos específicos do seu negócio.",
+          "Integração Sem Interrupções: Integramos serviços cloud com os seus sistemas existentes para uma transição suave.",
+          "Segurança de Dados: Implementamos as melhores práticas para garantir que os seus dados estão seguros e totalmente em conformidade.",
+          "Escalabilidade Automática: Dimensionamento dinâmico de recursos com base na procura do seu negócio."
+        ],
+        "Suporte Contínuo como Serviço",
+        "Não nos limitamos a configurar a sua infraestrutura cloud; oferecemos suporte e otimização contínuos para garantir que funciona eficientemente ao longo do tempo.",
+        [
+          "Monitorizamos os seus sistemas para garantir desempenho ideal.",
+          "Atualizações e melhorias constantes para manter a sua infraestrutura atualizada.",
+          "Resposta imediata e resolução de quaisquer problemas técnicos que surjam."
+        ]
+      ]
+    },
+    "cta": {
+      "title": "Ainda indeciso?",
+      "description": "Basta ligar-nos ou deixar uma mensagem rápida!",
+      "buttonLabel": "Contacto Rápido"
+    }
+  },
+  "about": {
+    "stage": {
+      "title": "Sobre Nós",
+      "text": "Como uma pequena mas apaixonada empresa tecnológica, somos guiados pelos princípios de transparência, inovação e liberdade. Acreditamos que toda ideia, por mais pequena que seja, tem o potencial de criar mudanças reais, e estamos empenhados em cultivar essas ideias num ambiente aberto e colaborativo.",
+      "content": "é uma empresa pequena e dinâmica que contrata programadores experientes. Somos maioritariamente portugueses, mas estamos sediados em Utrecht, Países Baixos."
+    },
+    "textSection": {
+      "title": "Quem Somos",
+      "paragraphs": [
+        "Na nossa pequena mas dinâmica empresa, sediada em Utrecht, reunimos uma talentosa equipa de cinco programadores remotos de Portugal, cada um especializado em diferentes áreas do desenvolvimento web. A nossa equipa prospera na colaboração, trabalhando além-fronteiras para criar soluções digitais inovadoras e eficazes, adaptadas às necessidades únicas dos nossos clientes. Apesar de sermos uma empresa pequena, acreditamos em entregar grandes resultados, aproveitando as competências e a criatividade da nossa diversa equipa.",
+        "Os nossos programadores são especializados em várias áreas do desenvolvimento web, desde design front-end e experiência do utilizador até engenharia de back-end e gestão de bases de dados. Esta diversidade de competências permite-nos abordar os projetos de forma holística, garantindo que cada aspeto de uma aplicação web é cuidadosamente trabalhado e otimizado. Orgulhamo-nos de nos manter atualizados com as mais recentes tecnologias e frameworks, para oferecer soluções escaláveis e eficientes que acompanhem as exigências do panorama digital em constante evolução.",
+        "Embora trabalhemos remotamente, estamos empenhados em manter uma comunicação forte e colaborativa. A nossa base em Utrecht serve como o centro das nossas operações, enquanto os nossos membros portugueses trazem as suas perspetivas e competências únicas a cada projeto. Juntos, criamos experiências web de alta qualidade e sem falhas para empresas, seja a construir uma nova plataforma ou a melhorar uma presença digital existente."
+      ]
+    },
+    "imgTextSection": {
+      "title": "Transparente, dedicado, livre",
+      "subTitle": "A Nossa Ética de Trabalho",
+      "text": "Transparência e dedicação. Estes são os nossos valores fundamentais. Prestamos serviços de programação de alta qualidade com termos claros e suporte ao cliente excecional. Disponíveis 24/7 para ajudar com quaisquer necessidades de programação, tornando a sua experiência simples e eficiente. Além disso, acreditamos que todos têm a liberdade de expressar o que querem e como querem. Não há espaço para censura na Code Breeze, e todos são incentivados a expressar as suas ideias. No final, são as relações que criamos que nos tornam mais do que a soma de cada indivíduo... na Code Breeze, não criamos apenas tecnologia – construímos ligações que perduram!"
+    }
+  },
+  "contact": {
+    "title": "Contacte-nos",
+    "contactForm": {
+      "namePlaceholder": "Nome",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Mensagem",
+      "buttonLabels": {
+        "idle": "Enviar",
+        "sending": "A Enviar",
+        "error": "Tente novamente!",
+        "sent": "Obrigado!",
+        "sent-but": "Mensagem enviada! O email está correto?"
+      }
+    },
+    "contactDetails": {
+      "detailsTitle": "Detalhes",
+      "office": {
+        "label": "Morada do Escritório",
+        "address": "Poortstraat, Utrecht, Países Baixos",
+        "link": "https://www.google.com/maps?q=52.0986,5.1355"
+      },
+      "phone": {
+        "label": "Telefone / WhatsApp",
+        "number": "+351 935 886 183 (PT)"
+      },
+      "email": {
+        "label": "Email",
+        "address": "info@codebreeze.org"
+      }
+    }
+  }
+}

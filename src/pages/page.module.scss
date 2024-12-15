@@ -4,18 +4,50 @@ $map-height: 30vh;
 $map-height-mobile: 20vh;
 
 .container-contact {
+  // Contact Us section
   & > section:nth-child(1) {
   }
+  // Map section
   & > section:nth-child(2) {
     height: $map-height-mobile;
   }
 }
 
+.language {
+  position: fixed;
+  z-index: 1001;
+  top: 5.5rem;
+  right: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  margin-right: 0.5rem;
+
+  & > button {
+    max-width: 2rem;
+    max-height: 2rem;
+
+    background-color: rgba(128, 128, 128, 0.1);
+
+    &.selected {
+      background-color: rgb(22, 30, 61);
+
+      background-color: rgb(22, 30, 61);
+      border: 1px solid white;
+      border-radius: 50%;
+      box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5), inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
 @include sm {
   .container-contact {
+    // Contact Us section
     & > section:nth-child(1) {
       height: calc(100vh - #{$navbar-height} - #{$map-height} - 0.3rem);
     }
+    // Map section
     & > section:nth-child(2) {
       height: $map-height;
     }
@@ -24,11 +56,19 @@ $map-height-mobile: 20vh;
 
 @include l {
   .container-contact {
+    // Contact Us section
     & > section:nth-child(1) {
-      height: calc(100vh - #{$navbar-height} - #{$map-height} - #{$footer-height});
+      height: calc(100vh - #{$navbar-height} - #{$map-height} - 1rem);
     }
+    // Map section
     & > section:nth-child(2) {
       height: $map-height;
     }
+  }
+
+  .language {
+    top: 1.5rem;
+
+    margin-right: 1rem;
   }
 }

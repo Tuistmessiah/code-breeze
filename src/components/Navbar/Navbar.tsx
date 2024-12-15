@@ -2,12 +2,20 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-
-import styles from './Navbar.module.scss';
 import Link from 'next/link';
 
+import { useTranslation } from '../../utils/translation-context';
+
+import LogoSvg from '../../assets/svg/logo.svg';
+import LogoCompleteSvg from '../../assets/svg/logo-complete.svg';
+
+import StyleUtils from '../../utils/style.utils';
+import styles from './Navbar.module.scss';
+
 const Navbar = () => {
+  const { translations } = useTranslation();
   const pathName = usePathname();
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // State to handle menu visibility
 
@@ -36,7 +44,7 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
-          {'</> Code Breeze'}
+          {scrolled && StyleUtils.breakpoint('l') ? <LogoSvg /> : <LogoCompleteSvg />}
         </Link>
 
         {/* Hamburger Button */}
@@ -54,16 +62,16 @@ const Navbar = () => {
           }}
         >
           <li className={`${pathName === '/' ? styles['active'] : ''}`}>
-            <Link href="/">Home</Link>
+            <Link href="/">{translations?.navbar.home}</Link>
           </li>
           <li className={`${pathName === '/services' ? styles['active'] : ''}`}>
-            <Link href="/services">Services</Link>
+            <Link href="/services">{translations?.navbar.services}</Link>
           </li>
           <li className={`${pathName === '/about' ? styles['active'] : ''}`}>
-            <Link href="/about">About</Link>
+            <Link href="/about">{translations?.navbar.about}</Link>
           </li>
           <li className={`${pathName === '/contact' ? styles['active'] : ''}`}>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">{translations?.navbar.contact}</Link>
           </li>
         </ul>
       </div>

@@ -15,6 +15,7 @@
 
   & > p {
     margin-bottom: 2rem;
+    letter-spacing: 1px;
 
     &:nth-child(even) {
       margin-right: 10rem;
@@ -52,6 +53,7 @@
 
     & > p {
       margin-bottom: 4rem;
+      letter-spacing: 1px;
     }
   }
 }

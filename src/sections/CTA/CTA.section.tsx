@@ -8,17 +8,17 @@ import styles from './CTA.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
 export interface CTASectionProps {
-  empty?: '';
+  title: string;
+  description: string;
+  buttonLabel: string;
 }
 
-export default function CTASection(props: CTASectionProps) {
-  const {} = props;
-
+export default function CTASection({ title, description, buttonLabel }: CTASectionProps) {
   return (
     <Section className={s('container')} innerClassName={s('inner-container')}>
-      <h2>Still unsure?</h2>
-      <p>Just give us a call or leave a quick message!</p>
-      <Button label={'Quick Contact'} href={'/contact'} variant={ButtonVariants.TERTIARY} />
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <Button label={buttonLabel} href={'/contact'} variant={ButtonVariants.TERTIARY} />
     </Section>
   );
 }

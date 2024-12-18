@@ -43,6 +43,8 @@ function AppContent({ Component, pageProps }: any) {
       <div className={s('language')}>
         <Button onClick={() => switchLanguage('en')} label={'🇬🇧'} className={s({ selected: locale === 'en' })} />
         <Button onClick={() => switchLanguage('pt')} label={'🇵🇹'} className={s({ selected: locale === 'pt' })} />
+        <Button onClick={() => switchLanguage('nl')} label={'🇳🇱'} className={s({ selected: locale === 'nl' })} />
+        {/* <Button onClick={() => switchLanguage('es')} label={'🇪🇸'} className={s({ selected: locale === 'es' })} /> */}
       </div>
     </>
   );

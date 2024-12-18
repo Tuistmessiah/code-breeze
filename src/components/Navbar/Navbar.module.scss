@@ -7,7 +7,7 @@
   height: $navbar-height;
   z-index: 1000;
 
-  padding: 2rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   display: flex;
@@ -72,7 +72,7 @@
   color: $logo-dark;
 
   & > svg {
-    width: 15rem;
+    width: 12rem;
     height: 70px;
   }
 }
@@ -114,10 +114,24 @@
   text-decoration: underline;
 }
 
+@include xxs {
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .navContainer {
+    .logo {
+      svg {
+        width: 15rem;
+      }
+    }
+  }
+}
+
 @include l {
   .navbar {
     height: $navbar-height;
-    padding: 0;
+    padding: 2rem;
     background-color: white;
 
     &.scrolled {
@@ -150,7 +164,7 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    padding: 0 6rem;
+    padding: 0 9rem;
   }
 
   .navLinks {

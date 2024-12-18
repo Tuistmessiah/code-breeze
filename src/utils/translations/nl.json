@@ -1,0 +1,356 @@
+{
+  "navbar": {
+    "home": "Start",
+    "services": "Diensten",
+    "designs": "Ontwerpen",
+    "about": "Over Ons",
+    "contact": "Contacteer Ons"
+  },
+  "home": {
+    "header": {
+      "description": "Klein of groot, bereik uw zakelijke doelen met ons. Laat ons helpen. Laat het stromen.",
+      "button": "Wat wij bieden"
+    },
+    "services": {
+      "title": "Eenvoud en efficiëntie!",
+      "subtitle": "Onze Diensten",
+      "description": "Gespecialiseerd in webontwikkeling bieden we ook diensten aan voor webapplicaties en softwareoplossingen. We zijn een kleinschalige organisatie, wat betekent dat onze nauwe samenwerking met klanten en aanpassingsmogelijkheden zorgen voor een hoogwaardige en passende oplossing!"
+    },
+    "work": {
+      "title": "Technologie en Bedrijf",
+      "subtitle": "Ons Werk",
+      "description": "Wij zijn ontwikkelaars en combineren het beste van twee werelden: een ingenieursmentaliteit voor onze technologische oplossingen, waardoor ze beheersbaar, schaalbaar en efficiënt zijn... en een zakelijke mindset die aansluit op uw behoeften! Samen brengen deze aanpakken vertrouwen en resultaten."
+    },
+    "services-header": [
+      {
+        "title": "Webontwikkeling",
+        "description": "Geen webbuilders, 100% maatwerk, snel, licht en met SEO-score 100/100"
+      },
+      {
+        "title": "Webapps",
+        "description": "Breid uit en bereik uw doelen met mobiele webapps"
+      },
+      {
+        "title": "Cloudoplossingen",
+        "description": "Schaalbare en efficiënte websites aangepast aan uw behoeften"
+      }
+    ],
+    "about": {
+      "title": "Over Ons",
+      "description": "Of het nu gaat om een specifieke behoefte of een uitgebreide samenwerking, wij zijn er om te helpen. Klaar om te schalen leveren wij hoogwaardige resultaten — groot of klein.",
+      "button": "Lees meer"
+    },
+    "ctaIcons": {
+      "title": "Geïnteresseerd in het uitbreiden van uw tools?",
+      "description": "Ontdek hoe u meer kunt integreren in uw huidige toolstack.",
+      "buttonLabel": "Contacteer Ons"
+    },
+    "cta": {
+      "title": "Nog niet zeker?",
+      "description": "Bel ons gewoon of laat een bericht achter!",
+      "buttonLabel": "Snel Contact"
+    }
+  },
+  "services": {
+    "stage": {
+      "title": "Diensten",
+      "text": "Wij regelen alles, van ontwerp tot implementatie en doorlopende ondersteuning, zodat u zich kunt concentreren op de groei van uw bedrijf. Of u nu een website of een webapplicatie nodig heeft, onze hands-on aanpak garandeert snelle, efficiënte en betrouwbare resultaten.",
+      "content": "Wij zijn gespecialiseerd in het leveren van uitgebreide digitale oplossingen, van webontwikkeling tot mobiele apps. Ons team van experts zorgt ervoor dat elk project is afgestemd op uw zakelijke behoeften, wat een naadloze en schaalbare ervaring oplevert."
+    },
+    "webDevelopment": {
+      "title": "Webontwikkeling",
+      "content": [
+        "Wij regelen alles zodat uw bedrijf een volledig functionele website kan hebben. Van ontwerp tot hosting, wij nemen de technische details uit handen zodat u zich kunt concentreren op het runnen van uw bedrijf. Of u nu kiest voor een aangepast ontwerp of een sjabloon, wij garanderen een zorgeloze ervaring.",
+        "Wat is inbegrepen",
+        "Onze diensten omvatten alles wat nodig is om uw website online te krijgen, met doorlopende ondersteuning om het soepel te laten draaien.",
+        [
+          "Aangepast of Sjabloonontwerp: Kies tussen een uniek ontwerp of een snel, hoogwaardig sjabloon.",
+          "Responsieve Ontwikkeling: We zorgen ervoor dat uw website goed werkt op alle apparaten.",
+          "Domein- en Hostingconfiguratie: Wij regelen de domeinregistratie en veilige hosting voor u.",
+          "Integratie van Functionaliteiten: Van e-commerce tot reserveringssystemen, wij integreren wat uw bedrijf nodig heeft.",
+          "SEO Optimalisatie: Ingebouwde SEO om de zichtbaarheid van uw website in zoekmachines te verbeteren."
+        ],
+        "Doorlopende Ondersteuning als Dienst",
+        "In tegenstelling tot eenmalige websiteprojecten gaat onze service verder dan ontwikkeling. We blijven uw website beheren en onderhouden, zodat deze altijd up-to-date en functioneel blijft.",
+        [
+          "Wij voeren updates, back-ups en beveiligingscontroles uit om uw site soepel te laten draaien.",
+          "Wij monitoren en beheren uw hosting voor consistente prestaties.",
+          "Wij staan klaar om technische problemen op te lossen.",
+          "Naarmate uw behoeften groeien, kunnen we nieuwe functionaliteiten en diensten integreren."
+        ]
+      ]
+    },
+    "webApp": {
+      "title": "Webapps",
+      "content": [
+        "Wij ontwikkelen webapps die schaalbaar, efficiënt en afgestemd zijn op uw unieke mobiele behoeften. Ons team regelt alles, van ontwerp tot implementatie, zodat uw app soepel draait op alle apparaten en platforms.",
+        "Wat is inbegrepen",
+        "Onze webappdienst biedt alles wat essentieel is voor het bouwen en onderhouden van een app met hoge prestaties.",
+        [
+          "Aangepast of Sjabloonontwerp: Kies tussen een op maat gemaakt ontwerp of een snelle sjabloonbenadering.",
+          "Compatibiliteit over meerdere platforms: We zorgen ervoor dat uw app naadloos werkt op iOS en Android.",
+          "Appimplementatie: We beheren appstore-indiening en updates.",
+          "Integratie van Functionaliteiten: Voeg belangrijke functies toe, zoals meldingen, betalingen en meer."
+        ],
+        "Doorlopende Ondersteuning als Dienst",
+        "Wij beperken ons niet tot het lanceren van uw app — wij onderhouden deze en zorgen voor updates en nieuwe functies naarmate uw bedrijf groeit.",
+        [
+          "Regelmatige updates en bugfixes om uw app efficiënt te houden.",
+          "Wij staan klaar om technische problemen op te lossen en updates uit te voeren.",
+          "Naarmate uw behoeften evolueren, helpen we bij het toevoegen van nieuwe functies of integraties."
+        ]
+      ]
+    },
+    "cloudSolutions": {
+      "title": "Cloudoplossingen",
+      "content": [
+        "Onze cloudoplossingen bieden een schaalbare, veilige en efficiënte infrastructuur, afgestemd op de behoeften van uw bedrijf. We ontwerpen en implementeren cloudsystemen die meegroeien met uw bedrijf, zodat alles soepel blijft verlopen en er flexibiliteit is voor toekomstige uitbreidingen.",
+        "Wat is inbegrepen",
+        "Onze clouddiensten dekken alles, van installatie tot continue ondersteuning, wat zorgt voor een robuust platform zonder complexiteit.",
+        [
+          "Aangepaste Architectuur: We ontwerpen cloudinfrastructuren die aansluiten bij uw specifieke zakelijke doelen.",
+          "Naadloze Integratie: We integreren clouddiensten met uw bestaande systemen voor een soepele overgang.",
+          "Gegevensbeveiliging: We implementeren best practices om ervoor te zorgen dat uw gegevens veilig en volledig compliant zijn.",
+          "Automatische Schaalbaarheid: Dynamische schaalvergroting van middelen op basis van de vraag van uw bedrijf."
+        ],
+        "Doorlopende Ondersteuning als Dienst",
+        "Wij beperken ons niet tot het opzetten van uw cloudinfrastructuur; wij bieden continue ondersteuning en optimalisatie om ervoor te zorgen dat het efficiënt blijft werken.",
+        [
+          "Wij monitoren uw systemen om optimale prestaties te garanderen.",
+          "Constante updates en verbeteringen om uw infrastructuur up-to-date te houden.",
+          "Directe respons en oplossing van eventuele technische problemen die zich voordoen."
+        ]
+      ]
+    },
+    "cta": {
+      "title": "Nog niet zeker?",
+      "description": "Bel ons gewoon of laat een bericht achter voor een gratis consult!",
+      "buttonLabel": "Snel Contact"
+    }
+  },
+  "designs": {
+    "stage": {
+      "title": "Ontwerpen",
+      "text": "Kies wat het beste bij jouw behoeften past! Hier laten we enkele voorbeelden zien uit ons portfolio. Van elegante zakelijke sjablonen tot dynamische portfolio's, we hebben alles wat je nodig hebt! Deze sjablonen zijn getest en bewezen, zowel door derden als door onszelf. En uiteraard, ze zijn allemaal aanpasbaar ;).",
+      "content": "We weten dat niet alleen de UI/UX belangrijk is. Tijd en pragmatiek spelen een cruciale rol in jouw bedrijf. Het gebruik van sjablonen zorgt voor razendsnelle implementaties, met mogelijkheden voor aanpassingen en wijzigingen op elk moment."
+    },
+    "titleSvgPortfolio": {
+      "title": "Portfolio",
+      "subTitle": "Bekijk enkele van onze projecten en laat je inspireren! Ze werken geweldig!"
+    },
+    "titleSvgPremium": {
+      "title": "Ontwerpopties",
+      "subTitle": "Kies uit een breed scala aan professionele ontwerpen die we aanpassen aan jouw behoeften."
+    },
+    "imgTextSection": {
+      "title": "Aangepast, aanpasbaar of sjabloon",
+      "subTitle": "Laten we designs shoppen!",
+      "text": "De groei van jouw bedrijf moet een snelle, aantrekkelijke en aanpasbare oplossing hebben. We zijn gewend te werken met hoogwaardige sjablonen die kunnen worden aangepast. In speciale gevallen bieden we vanaf nul ontworpen ontwerpen aan, afhankelijk van jouw specifieke behoeften. Alleen persoonlijk contact met ons kan ons precies vertellen wat je nodig hebt. We hebben nog veel meer te laten zien!"
+    },
+    "carousel": {
+      "portfolio": {
+        "simple": "Eenvoudig",
+        "modern": "Modern",
+        "dynamic": "Dynamisch 3D"
+      },
+      "premium": {
+        "business": "Zakelijk en Professioneel",
+        "creative": "Creatief en Kunst",
+        "commerce": "E-commerce en Verkoop",
+        "events": "Evenementen en Promoties"
+      }
+    },
+    "simpleCards": [
+      {
+        "image": "/images/portfolio/tuist-1.png",
+        "title": "Tuist Website",
+        "description": "De website van een muziekgroep, met een CRM voor geschreven inhoud en multimedia.",
+        "href": "https://webtuist-test.codebreeze.org/musica",
+        "buttonText": "Bezoek"
+      }
+    ],
+    "modernCards": [
+      {
+        "image": "/images/portfolio/mo-1.png",
+        "title": "Schoonheidsproducten",
+        "description": "Een strak en stijlvol ontwerp voor jouw spa of innovatieve producten.",
+        "href": "https://project-mo.codebreeze.org/",
+        "buttonText": "Bezoek"
+      },
+      {
+        "image": "/images/portfolio/olives-1.png",
+        "title": "Olive Oil Nano",
+        "description": "Nanotechnologie ontmoet traditie in deze gezondheidsproductenwinkel.",
+        "href": "https://project-olives.codebreeze.org/",
+        "buttonText": "Bezoek"
+      }
+    ],
+    "dynamicCards": [
+      {
+        "image": "/images/portfolio/3D-1.png",
+        "title": "3D Digitale Presentatie",
+        "description": "Een interactieve cartoonachtige 3D-website.",
+        "href": "https://port-world.codebreeze.org/",
+        "buttonText": "Bezoek"
+      }
+    ],
+    "themeBusinessCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-corporate.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-corporate.html",
+        "title": "Zakelijk/Corporate"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-seo-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-seo-agency.html",
+        "title": "SEO-diensten"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-consulting.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-consulting.html",
+        "title": "Consultancy"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-finance.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-finance.html",
+        "title": "Investeringen"
+      }
+    ],
+    "themeCreativeCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-design-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-design-agency.html",
+        "title": "Branding"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-music.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-music-onepage.html",
+        "title": "Muziekband"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-scattered-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-scattered-portfolio.html",
+        "title": "Digitale Agency"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-interactive-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-interactive-portfolio.html",
+        "title": "Digitale Marketing"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-minimal-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-minimal-portfolio.html#",
+        "title": "Professioneel Portfolio"
+      }
+    ],
+    "themeCommerceCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-fashion-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-fashion-store.html",
+        "title": "Kledingcollectie"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-product.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-product-showcase.html",
+        "title": "Product Showcase"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-decor-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-decor-store.html",
+        "title": "Meubelwinkel"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-pizza-parlor.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-pizza-parlor.html",
+        "title": "Italiaans Restaurant"
+      }
+    ],
+    "themeEventsCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-ebook.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-ebook.html",
+        "title": "Boekpromotie"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-wedding-invitation.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-wedding-invitation.html",
+        "title": "Huwelijksuitnodiging"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-conference.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-conference.html",
+        "title": "Zakelijke Conferentie"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-charity.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-charity.html",
+        "title": "Fondsenwervingspagina"
+      }
+    ],
+    "cta": {
+      "title": "Twijfel je nog?",
+      "description": "Bel ons of stuur een bericht voor een gratis consult!",
+      "buttonLabel": "Snel Contact"
+    },
+    "disclaimer": {
+      "title": "Over Onze Templates",
+      "paragraph1": "De hier getoonde templates zijn afkomstig van gelicentieerde en hoogwaardige ontwerpen gemaakt door vertrouwde professionals. Ze dienen als startpunt voor volledig aangepaste oplossingen.",
+      "paragraph2": {
+        "text": "Bekijk hier een volledige catalogus",
+        "link": "https://craftohtml.themezaa.com/",
+        "note": "(Wij helpen je de ideale template te kiezen en aan te passen!)"
+      }
+    }
+  },
+  "about": {
+    "stage": {
+      "title": "Over Ons",
+      "text": "Als een klein maar gepassioneerd technologiebedrijf worden we geleid door de principes van transparantie, innovatie en vrijheid. Wij geloven dat elk idee, hoe klein ook, het potentieel heeft om echte verandering te brengen, en we zetten ons in om die ideeën te koesteren in een open en samenwerkende omgeving.",
+      "content": "is een klein en dynamisch bedrijf dat ervaren ontwikkelaars in dienst heeft. We zijn voornamelijk Portugees, maar gevestigd in Utrecht, Nederland."
+    },
+    "textSection": {
+      "title": "Wie Wij Zijn",
+      "paragraphs": [
+        "In ons kleine maar dynamische bedrijf, gevestigd in Utrecht, brengen we een getalenteerd team van vijf remote webontwikkelaars uit Portugal samen, elk gespecialiseerd in verschillende gebieden van webontwikkeling. Ons team floreert in samenwerking, werkt over grenzen heen om innovatieve en effectieve digitale oplossingen te creëren die zijn afgestemd op de unieke behoeften van onze klanten. Ondanks dat we een klein bedrijf zijn, geloven we in het leveren van grote resultaten door de vaardigheden en creativiteit van ons diverse team te benutten.",
+        "Onze ontwikkelaars zijn gespecialiseerd in verschillende gebieden van webontwikkeling, variërend van front-end design en gebruikerservaring tot back-end engineering en databasebeheer. Deze diversiteit aan expertise stelt ons in staat om projecten holistisch aan te pakken, zodat elk aspect van een webapplicatie zorgvuldig wordt ontwikkeld en geoptimaliseerd. We zijn trots op onze up-to-date kennis van de nieuwste technologieën en frameworks, waardoor we schaalbare en efficiënte oplossingen kunnen bieden die voldoen aan de voortdurend veranderende eisen van het digitale landschap.",
+        "Hoewel we op afstand werken, zetten we ons in voor sterke communicatie en samenwerking. Onze basis in Utrecht fungeert als het centrum van onze activiteiten, terwijl onze Portugese teamleden hun unieke perspectieven en vaardigheden in elk project inbrengen. Samen creëren we naadloze, hoogwaardige webervaringen voor bedrijven, of het nu gaat om het bouwen van een nieuw platform of het verbeteren van een bestaande digitale aanwezigheid."
+      ]
+    },
+    "imgTextSection": {
+      "title": "Transparant, toegewijd, vrij",
+      "subTitle": "Onze Werkethiek",
+      "text": "Transparantie en toewijding. Dit zijn onze kernwaarden. Wij bieden hoogwaardige programmeerdiensten met duidelijke voorwaarden en uitzonderlijke klantenondersteuning. We zijn 24/7 beschikbaar om te helpen met al jouw programmeerbehoeften, zodat je ervaring eenvoudig en efficiënt is. Bovendien geloven wij dat iedereen vrij is om te uiten wat ze willen en hoe ze dat willen. Bij Code Breeze is er geen plaats voor censuur, en iedereen wordt aangemoedigd om hun ideeën te delen. Uiteindelijk zijn het de relaties die we opbouwen die ons meer maken dan de som van elk individu... bij Code Breeze creëren we niet alleen technologie – we bouwen verbindingen die blijven bestaan!"
+    }
+  },
+  "contact": {
+    "title": "Contacteer Ons",
+    "contactForm": {
+      "namePlaceholder": "Naam",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Bericht",
+      "buttonLabels": {
+        "idle": "Versturen",
+        "sending": "Bezig met verzenden",
+        "error": "Probeer opnieuw!",
+        "sent": "Bedankt!",
+        "sent-but": "Bericht verzonden! Is het e-mailadres correct?"
+      }
+    },
+    "contactDetails": {
+      "detailsTitle": "Details",
+      "office": {
+        "label": "Kantooradres",
+        "address": "Poortstraat, Utrecht, Nederland",
+        "link": "https://www.google.com/maps?q=52.0986,5.1355"
+      },
+      "phone": {
+        "label": "Telefoon / WhatsApp",
+        "number": "+351 935 886 183 (PT)"
+      },
+      "email": {
+        "label": "E-mail",
+        "address": "info@codebreeze.org"
+      }
+    }
+  }
+}

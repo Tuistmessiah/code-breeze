@@ -1,9 +1,10 @@
 'use client';
 
+import { useTranslation } from '../utils/translation-context';
+
 import CTASection from '@sections/CTA/CTA.section';
 import ImageTextFullSection from '@sections/ImageTextFull/ImageTextFull.section';
 import StageSection from '@sections/Stage/Stage.section';
-import { useTranslation } from '../utils/translation-context';
 
 export default function ServicesPage() {
   const { translations } = useTranslation();

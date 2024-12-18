@@ -3,6 +3,14 @@
 $map-height: 30vh;
 $map-height-mobile: 20vh;
 
+.container-templates {
+  & > section:nth-child(1) {
+    img {
+      object-position: top !important;
+    }
+  }
+}
+
 .container-contact {
   // Contact Us section
   & > section:nth-child(1) {

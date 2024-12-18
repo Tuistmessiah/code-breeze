@@ -67,6 +67,9 @@ const Navbar = () => {
           <li className={`${pathName === '/services' ? styles['active'] : ''}`}>
             <Link href="/services">{translations?.navbar.services}</Link>
           </li>
+          <li className={`${pathName === '/templates' ? styles['active'] : ''}`}>
+            <Link href="/templates">{translations?.navbar.templates}</Link>
+          </li>
           <li className={`${pathName === '/about' ? styles['active'] : ''}`}>
             <Link href="/about">{translations?.navbar.about}</Link>
           </li>

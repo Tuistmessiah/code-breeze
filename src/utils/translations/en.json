@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "services": "Services",
+    "templates": "Templates",
     "about": "About",
     "contact": "Contact Us"
   },
@@ -126,6 +127,52 @@
       "description": "Just give us a call or leave a quick message!",
       "buttonLabel": "Quick Contact"
     }
+  },
+  "templates": {
+    "stage": {
+      "title": "Templates",
+      "text": "Here we show a few examples. Using templates it allows for lightning speed web deployment and all are battle-proven, either by third parties or by ourselves. All of these are adaptable of course ;).",
+      "content": "we know that not only the UI/UX will be important. Time and pragmatism has a big role in your business. By using templates we can go a long way, allowing customizations and changes anytime."
+    },
+    "imgTextSection": {
+      "title": "Custom, customizable or templated",
+      "subTitle": "Let us go Design Shopping!",
+      "text": "Your business expansion should be able to have a fast, appealing and customizable solution. We are used to work with high quality templates that can be customized. In special cases, we offer from-scratch designs, depending on the specific needs you have. Only a personal contact with us will let us know what you need. we have a lot more to show!"
+    },
+    "simpleCards": [
+      {
+        "image": "/images/portfolio/tuist-1.png",
+        "title": "Tuist website",
+        "description": "A musical group's website, with a CRM for written content and multimedia.",
+        "href": "https://webtuist-test.codebreeze.org/musica",
+        "buttonText": "Visit"
+      }
+    ],
+    "modernCards": [
+      {
+        "image": "/images/portfolio/mo-1.png",
+        "title": "Beauty Products",
+        "description": "A sleek and stylish design for your spa or innovative products.",
+        "href": "https://project-mo.codebreeze.org/",
+        "buttonText": "Visit"
+      },
+      {
+        "image": "/images/portfolio/olives-1.png",
+        "title": "Olive Oil Nano",
+        "description": "Nanotechnology meets tradition in this health product store.",
+        "href": "https://project-olives.codebreeze.org/",
+        "buttonText": "Visit"
+      }
+    ],
+    "dynamicCards": [
+      {
+        "image": "/images/portfolio/3D-1.png",
+        "title": "3D Digital Presentation",
+        "description": "A cartoonish 3D interactive website.",
+        "href": "https://port-world.codebreeze.org/",
+        "buttonText": "Visit"
+      }
+    ]
   },
   "about": {
     "stage": {

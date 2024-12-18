@@ -23,8 +23,8 @@ export default function Card({ image, title, description, href, buttonText }: Ca
         </Link>
       </div>
       <div className={s('content')}>
-        <h2 className={s('title')}>{title}</h2>
-        <p className={s('description')}>{description}</p>
+        {title && <h2 className={s('title')}>{title}</h2>}
+        {description && <p className={s('description')}>{description}</p>}
         {/* {buttonText && (
           <Link href={href} target="_blank" className={s('button')}>
             {buttonText}

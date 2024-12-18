@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Section from '../../components-wrapper/Section/Section.component';
 import Button from '../../components/Button/Button.component';
@@ -15,12 +15,22 @@ const s = StyleUtils.styleMixer(styles);
 export interface CarouselSectionProps {
   title: string;
   cards: React.ReactNode[];
+  isHalfScreen?: boolean;
 }
 
 export default function CarouselSection(props: CarouselSectionProps) {
-  const { title, cards } = props;
+  const { title, cards, isHalfScreen } = props;
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const updateIsMobile = () => setIsMobile(StyleUtils.breakpoint('l', 'max'));
+    updateIsMobile();
+    window.addEventListener('resize', updateIsMobile);
+
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
@@ -35,7 +45,7 @@ export default function CarouselSection(props: CarouselSectionProps) {
       <h2>{title}</h2>
       <div className={s('carousel')} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {cards.map((card, index) => (
-          <div key={index} className={s('item')}>
+          <div key={index} className={s('item', { 'half-screen': !!isHalfScreen })}>
             {card}
           </div>
         ))}
@@ -47,7 +57,8 @@ export default function CarouselSection(props: CarouselSectionProps) {
               <ArrowLeftIcon />
             </div>
           )}
-          {currentIndex != cards.length - 1 && (
+          {/* In the css, after breakpoint "l", cards are displayed as 100% width which affects display of the Arrow Right */}
+          {currentIndex < (isHalfScreen && !isMobile ? cards.length / 2 : cards.length) - 1 && (
             <div className={s('button', 'right')} onClick={handleNext}>
               <ArrowRightIcon />
             </div>

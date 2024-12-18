@@ -2,6 +2,13 @@
 const nextConfig = {
   images: {
     domains: ['www.agilitypr.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'craftohtml.themezaa.com',
+        pathname: '/**',
+      },
+    ],
   },
   webpack(config) {
     config.module.rules.push({

@@ -1,0 +1,34 @@
+// @import '../../styles/imports.scss';
+
+.container {
+  margin: 2rem 0;
+}
+
+.inner-container {
+  & > h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+.content {
+  padding-left: 2rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: rgb(0, 110, 255);
+    text-decoration: underline;
+
+    &:hover {
+      color: rgb(0, 123, 139);
+    }
+  }
+
+  span {
+    font-style: italic;
+    color: gray;
+  }
+}

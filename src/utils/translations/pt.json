@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Início",
     "services": "Serviços",
-    "templates": "Templates",
+    "designs": "Designs",
     "about": "Sobre",
     "contact": "Contacte-nos"
   },
@@ -48,7 +48,7 @@
     "cta": {
       "title": "Ainda indeciso?",
       "description": "Basta ligar-nos ou deixar uma mensagem rápida!",
-      "buttonLabel": "Contacto Rápido"
+      "buttonLabel": "Contacto rápido"
     }
   },
   "services": {
@@ -128,16 +128,37 @@
       "buttonLabel": "Contacto Rápido"
     }
   },
-  "templates": {
+  "designs": {
     "stage": {
-      "title": "Templates",
-      "text": "Aqui mostramos alguns exemplos. Utilizar modelos/templates permite um desenvolvimento web ultrarrápido e todos são comprovados, seja por terceiros ou por nós mesmos. Todos estes são, obviamente, adaptáveis ;).",
-      "content": "sabemos que não é apenas o UI/UX que será importante. O tempo e o pragmatismo desempenham um grande papel no teu negócio. Utilizando modelos, conseguimos avançar rapidamente, permitindo personalizações e alterações a qualquer momento."
+      "title": "Designs",
+      "text": "Escolhe o que mais se adequa às tuas necessidades! Aqui mostramos alguns exemplos do nosso portefólio. Desde templates corporativos elegantes a portefólios dinâmicos, temos tudo o que precisas! Estes templates são testados e comprovados, quer por terceiros, quer por nós próprios. Todos eles são, claro, adaptáveis ;).",
+      "content": "Sabemos que não é apenas o UI/UX que importa. O tempo e o pragmatismo têm um papel crucial no teu negócio. Utilizar templates permite implementações rápidas como um relâmpago, garantindo personalizações e mudanças a qualquer momento."
+    },
+    "titleSvgPortfolio": {
+      "title": "Portefólio",
+      "subTitle": "Explora alguns dos nossos trabalhos e inspira-te! Funcionam bem!"
+    },
+    "titleSvgPremium": {
+      "title": "Opções de Design",
+      "subTitle": "Escolhe entre uma variedade de designs profissionais que personalizamos para atender às tuas necessidades."
     },
     "imgTextSection": {
-      "title": "Personalizado, personalizável ou modelado",
-      "subTitle": "Vamos às Compras de Design!",
-      "text": "A expansão do teu negócio deve contar com uma solução rápida, apelativa e personalizável. Estamos habituados a trabalhar com modelos de alta qualidade que podem ser personalizados. Em casos especiais, oferecemos designs feitos do zero, dependendo das necessidades específicas que tenhas. Apenas um contacto pessoal connosco permitirá saber o que realmente precisas. Temos muito mais para mostrar!"
+      "title": "Personalizado, personalizável ou por template",
+      "subTitle": "Vamos fazer compras de designs!",
+      "text": "A expansão do teu negócio deve ter uma solução rápida, apelativa e personalizável. Estamos habituados a trabalhar com templates de alta qualidade que podem ser personalizados. Em casos especiais, oferecemos designs criados do zero, dependendo das tuas necessidades específicas. Apenas um contacto pessoal connosco nos permitirá saber exatamente o que precisas. Temos muito mais para mostrar!"
+    },
+    "carousel": {
+      "portfolio": {
+        "simple": "Simples",
+        "modern": "Moderno",
+        "dynamic": "Dinâmico 3D"
+      },
+      "premium": {
+        "business": "Corporativo e Profissional",
+        "creative": "Criativo e Artes",
+        "commerce": "E-commerce e Vendas",
+        "events": "Eventos e Promoções"
+      }
     },
     "simpleCards": [
       {
@@ -152,14 +173,14 @@
       {
         "image": "/images/portfolio/mo-1.png",
         "title": "Produtos de Beleza",
-        "description": "Um design elegante e estiloso para o teu spa ou produtos inovadores.",
+        "description": "Um design elegante e estilizado para o teu spa ou produtos inovadores.",
         "href": "https://project-mo.codebreeze.org/",
         "buttonText": "Visitar"
       },
       {
         "image": "/images/portfolio/olives-1.png",
         "title": "Olive Oil Nano",
-        "description": "Nanotecnologia encontra a tradição nesta loja de produtos saudáveis.",
+        "description": "Nanotecnologia encontra a tradição nesta loja de produtos de saúde.",
         "href": "https://project-olives.codebreeze.org/",
         "buttonText": "Visitar"
       }
@@ -168,11 +189,118 @@
       {
         "image": "/images/portfolio/3D-1.png",
         "title": "Apresentação Digital 3D",
-        "description": "Um website interativo com um estilo cartoon 3D.",
+        "description": "Um website interativo em 3D com um toque cartoon.",
         "href": "https://port-world.codebreeze.org/",
         "buttonText": "Visitar"
       }
-    ]
+    ],
+    "themeBusinessCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-corporate.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-corporate.html",
+        "title": "Corporativo/Negócios"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-seo-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-seo-agency.html",
+        "title": "Serviços SEO"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-consulting.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-consulting.html",
+        "title": "Consultoria"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-finance.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-finance.html",
+        "title": "Investimentos"
+      }
+    ],
+    "themeCreativeCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-design-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-design-agency.html",
+        "title": "Branding"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-music.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-music-onepage.html",
+        "title": "Banda Musical"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-scattered-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-scattered-portfolio.html",
+        "title": "Agência Digital"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-interactive-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-interactive-portfolio.html",
+        "title": "Marketing Digital"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-minimal-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-minimal-portfolio.html#",
+        "title": "Portefólio Profissional"
+      }
+    ],
+    "themeCommerceCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-fashion-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-fashion-store.html",
+        "title": "Coleção de Roupas"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-product.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-product-showcase.html",
+        "title": "Demonstração de Produto"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-decor-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-decor-store.html",
+        "title": "Loja de Mobiliário"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-pizza-parlor.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-pizza-parlor.html",
+        "title": "Restaurante Italiano"
+      }
+    ],
+    "themeEventsCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-ebook.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-ebook.html",
+        "title": "Promoção de Livro"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-wedding-invitation.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-wedding-invitation.html",
+        "title": "Página de Casamento"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-conference.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-conference.html",
+        "title": "Conferência Empresarial"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-charity.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-charity.html",
+        "title": "Página de Angariação de Fundos"
+      }
+    ],
+    "cta": {
+      "title": "Indeciso?",
+      "description": "Basta ligar-nos ou enviar-nos uma mensagem para uma consulta gratuita!",
+      "buttonLabel": "Contacto rápido"
+    },
+    "disclaimer": {
+      "title": "Sobre os Nossos Templates",
+      "paragraph1": "Os templates apresentados aqui são provenientes de designs licenciados e de alta qualidade criados por profissionais de confiança. Servem como ponto de partida para soluções totalmente personalizadas.",
+      "paragraph2": {
+        "text": "Explora um catálogo completo aqui",
+        "link": "https://craftohtml.themezaa.com/",
+        "note": "(Ajudamos-te a escolher e personalizar o ideal para ti!)"
+      }
+    }
   },
   "about": {
     "stage": {

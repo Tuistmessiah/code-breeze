@@ -58,6 +58,12 @@ h5 {
   letter-spacing: 1px;
 }
 
+p,
+span,
+a {
+  line-height: 1.3rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

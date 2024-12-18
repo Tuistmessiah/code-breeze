@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "services": "Services",
-    "templates": "Templates",
+    "designs": "Designs",
     "about": "About",
     "contact": "Contact Us"
   },
@@ -128,16 +128,37 @@
       "buttonLabel": "Quick Contact"
     }
   },
-  "templates": {
+  "designs": {
     "stage": {
-      "title": "Templates",
-      "text": "Here we show a few examples. Using templates it allows for lightning speed web deployment and all are battle-proven, either by third parties or by ourselves. All of these are adaptable of course ;).",
-      "content": "we know that not only the UI/UX will be important. Time and pragmatism has a big role in your business. By using templates we can go a long way, allowing customizations and changes anytime."
+      "title": "Designs",
+      "text": "Choose what fits you best! Here we show a few examples from our portfolio. From sleek corporate templates to dynamic portfolios, we've got you covered! These templates are battle-proven, either by third parties or by ourselves. All of these are adaptable of course ;).",
+      "content": "we know that not only the UI/UX will be important. Time and pragmatism has a big role in your business. Using templates allows for lightning speed deployment and allowing customizations and changes anytime."
+    },
+    "titleSvgPortfolio": {
+      "title": "Portolfio",
+      "subTitle": "Check some of our work and get inspired! They work well!"
+    },
+    "titleSvgPremium": {
+      "title": "Design Options",
+      "subTitle": "Choose from a variety of professional designs that we’ll customize to meet your needs."
     },
     "imgTextSection": {
       "title": "Custom, customizable or templated",
       "subTitle": "Let us go Design Shopping!",
       "text": "Your business expansion should be able to have a fast, appealing and customizable solution. We are used to work with high quality templates that can be customized. In special cases, we offer from-scratch designs, depending on the specific needs you have. Only a personal contact with us will let us know what you need. we have a lot more to show!"
+    },
+    "carousel": {
+      "portfolio": {
+        "simple": "Simple",
+        "modern": "Modern",
+        "dynamic": "Dynamic 3D"
+      },
+      "premium": {
+        "business": "Corporate & Professional",
+        "creative": "Creative & Arts",
+        "commerce": "E-commerce & Retail",
+        "events": "Events & Promotions"
+      }
     },
     "simpleCards": [
       {
@@ -172,7 +193,115 @@
         "href": "https://port-world.codebreeze.org/",
         "buttonText": "Visit"
       }
-    ]
+    ],
+    "themeBusinessCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-corporate.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-corporate.html",
+        "title": "Corporate/Business"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-seo-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-seo-agency.html",
+        "title": "SEO Services"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-consulting.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-consulting.html",
+        "title": "Consultancy"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-finance.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-finance.html",
+        "title": "Investments"
+      }
+    ],
+    "themeCreativeCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-design-agency.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-design-agency.html",
+        "title": "Branding"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-music.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-music-onepage.html",
+        "title": "Musical Band"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-scattered-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-scattered-portfolio.html",
+        "title": "Digital Agency"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-interactive-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-interactive-portfolio.html",
+        "title": "Brand/Marketing Digital"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-minimal-portfolio.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-minimal-portfolio.html#",
+        "title": "Professional Portfolio"
+      }
+    ],
+    "themeCommerceCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-fashion-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-fashion-store.html",
+        "title": "Clothes Collection"
+      },
+
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-product.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-product-showcase.html",
+        "title": "Product Showcase"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-decor-store.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-decor-store.html",
+        "title": "Furniture Shop"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-pizza-parlor.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-pizza-parlor.html",
+        "title": "Italian Restaurant"
+      }
+    ],
+    "themeEventsCards": [
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-ebook.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-ebook.html",
+        "title": "Book Promotion"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-wedding-invitation.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-wedding-invitation.html",
+        "title": "Wedding Page"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-conference.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-conference.html",
+        "title": "Business Conference"
+      },
+      {
+        "image": "https://craftohtml.themezaa.com/images/demo-charity.jpg",
+        "href": "https://craftohtml.themezaa.com/demo-charity.html",
+        "title": "Charity Landing Page"
+      }
+    ],
+    "cta": {
+      "title": "Still Unsure?",
+      "description": "Just call us or send us a message for a free consultation!",
+      "buttonLabel": "Quick Contact"
+    },
+    "disclaimer": {
+      "title": "About Our Templates",
+      "paragraph1": "The templates showcased here are sourced from high-quality, licensed designs created by trusted professionals. These serve as starting points for fully customized solutions.",
+      "paragraph2": {
+        "text": "Explore a full catalog here",
+        "link": "https://craftohtml.themezaa.com/",
+        "note": "(We’ll help you choose and customize the perfect one!)"
+      }
+    }
   },
   "about": {
     "stage": {

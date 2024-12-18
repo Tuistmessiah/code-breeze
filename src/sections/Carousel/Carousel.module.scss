@@ -5,7 +5,7 @@
 }
 
 .inner-container {
-  padding: 4rem 0;
+  margin-top: 2rem;
 
   & > h2 {
     margin-left: 2rem;
@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  margin: 10px;
+  padding: 10px;
 }
 
 .button {
@@ -89,4 +89,13 @@
 .radix-icon {
   width: 24px;
   height: 24px;
+}
+
+// After this breakpoint, in the code we need to adapt the conditional display of the Arrow Right
+@include l {
+  .item {
+    &.half-screen {
+      max-width: 50%;
+    }
+  }
 }

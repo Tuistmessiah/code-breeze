@@ -13,7 +13,7 @@ export interface TextSectionProps {
 
 export default function TextSection({ title, paragraphs }: TextSectionProps) {
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container')} innerClassName={s('inner-container')} useBgColor="secondary">
       <h2>{title}</h2>
       {paragraphs.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>

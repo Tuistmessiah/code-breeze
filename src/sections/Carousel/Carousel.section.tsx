@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 
 import Section from '../../components-wrapper/Section/Section.component';
-import Button from '../../components/Button/Button.component';
 
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
@@ -41,7 +40,7 @@ export default function CarouselSection(props: CarouselSectionProps) {
   };
 
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container')} innerClassName={s('inner-container')} useBgColor="primary">
       <h2>{title}</h2>
       <div className={s('carousel')} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {cards.map((card, index) => (

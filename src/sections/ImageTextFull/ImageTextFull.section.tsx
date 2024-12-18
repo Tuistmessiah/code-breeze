@@ -23,7 +23,7 @@ export default function ImageTextFullSection(props: ImageTextFullSectionProps) {
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   return (
-    <Section className={s('container')} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
+    <Section className={s('container')} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} useBgColor="primary" ref={ref}>
       <div className={s('content', imageToRight ? 'image-right' : '')}>
         <div className={s('image-wrapper')}>
           {image?.url && <Image src={image.url} alt={(image?.title || image?.description) as string} width={image.width} height={image.height} className={s('image')} />}

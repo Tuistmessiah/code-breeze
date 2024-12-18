@@ -5,6 +5,17 @@
   padding: $padding-normal;
   overflow: hidden;
 
+  &.bg-color-primary {
+    background-color: $gc-primary;
+    // background-color: red; // !
+    color: $gc-primary-anti;
+  }
+  &.bg-color-secondary {
+    background-color: $gc-secondary;
+    // background-color: blue;
+    color: $gc-secondary-anti;
+  }
+
   @include sm {
     padding: $padding-sm;
   }

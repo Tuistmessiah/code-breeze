@@ -15,7 +15,7 @@ export interface CTASectionProps {
 
 export default function CTASection({ title, description, buttonLabel }: CTASectionProps) {
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container')} innerClassName={s('inner-container')} useBgColor="primary">
       <h2>{title}</h2>
       <p>{description}</p>
       <Button label={buttonLabel} href={'/contact'} variant={ButtonVariants.TERTIARY} />

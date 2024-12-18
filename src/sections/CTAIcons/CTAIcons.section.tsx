@@ -21,7 +21,7 @@ export default function CTAIconsSection({ title, description, buttonLabel }: CTA
   const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
 
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container')} innerClassName={s('inner-container')} useBgColor="secondary">
       <div className={s('text-content', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
         <h2>{title}</h2>
         <p>{description}</p>

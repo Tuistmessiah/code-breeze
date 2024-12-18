@@ -2,6 +2,8 @@
 
 import { useInView } from 'react-intersection-observer';
 
+import Section from '../../components-wrapper/Section/Section.component';
+
 import StyleUtils from '@utils/style.utils';
 import style from './Services.module.scss';
 const s = StyleUtils.styleMixer(style);
@@ -23,7 +25,7 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
   const scrolledInViews = [scrolledInView1, scrolledInView2, scrolledInView3];
 
   return (
-    <section className={s('section', 'section')}>
+    <Section className={s('section', 'section')} useBgColor={'primary'}>
       <div className={s('container')}>
         <div className={s('content')}>
           {services.map((service, index) => {
@@ -38,6 +40,6 @@ export default function ServicesSection({ services }: ServicesSectionProps) {
           })}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

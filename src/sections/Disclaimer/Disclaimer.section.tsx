@@ -15,7 +15,7 @@ export default function DisclaimerSection(props: DisclaimerSectionProps) {
   const { title, children } = props;
 
   return (
-    <Section className={s('container')} innerClassName={s('inner-container')}>
+    <Section className={s('container')} innerClassName={s('inner-container')} useBgColor="primary">
       <h3>{title}</h3>
       <div className={s('content')}>{children}</div>
     </Section>

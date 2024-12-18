@@ -1,6 +1,8 @@
 'use client';
 
+import Section from '../../components-wrapper/Section/Section.component';
 import Button, { ButtonVariants } from '@components/Button/Button.component';
+
 import styles from './About.module.scss';
 import cn from 'classnames';
 
@@ -12,7 +14,7 @@ export interface AboutSectionProps {
 
 export default function AboutSection({ title, description, buttonLabel }: AboutSectionProps) {
   return (
-    <section className={cn(styles['section'], 'section')}>
+    <Section className={cn(styles['section'], 'section')} useBgColor="primary">
       <div className={styles['container']}>
         <h2>{title}</h2>
         <div className={styles['content']}>
@@ -20,6 +22,6 @@ export default function AboutSection({ title, description, buttonLabel }: AboutS
           <Button label={buttonLabel} href={'/about'} variant={ButtonVariants.TERTIARY} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

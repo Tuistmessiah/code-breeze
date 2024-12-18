@@ -1,7 +1,5 @@
 'use client';
 
-// import Image from 'next/image';
-
 import Section from '@components-wrapper/Section/Section.component';
 import Button, { ButtonVariants } from '@components/Button/Button.component';
 
@@ -11,8 +9,6 @@ import LogoCompleteNegativeSvg from '../../assets/svg/logo-complete-negative.svg
 import StyleUtils from '@utils/style.utils';
 import style from './Header.module.scss';
 const s = StyleUtils.styleMixer(style);
-
-// ? Was using a background image. Think of new design.
 
 export interface HeaderSectionProps {
   empty?: '';
@@ -44,15 +40,7 @@ export default function HeaderSection(props: HeaderSectionProps) {
   const { text, buttonLabel, buttonHref, imageSrc } = props;
 
   return (
-    <Section
-      className={s('container')}
-      innerClassName={s('inner-container')}
-      // bgNode={
-      //   <div className={s('bg-container')}>
-      //     <Image src={imageSrc} alt="Background" layout="fill" objectFit="cover" />
-      //   </div>
-      // }
-    >
+    <Section className={s('container')} innerClassName={s('inner-container')}>
       <div className={s('loose-icons')}>{generateRandomStyles()}</div>
       <LogoCompleteNegativeSvg />
       <h3>{text}</h3>

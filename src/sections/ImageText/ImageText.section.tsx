@@ -15,7 +15,6 @@ const s = StyleUtils.styleMixer(styles);
 export enum VariantsITSection {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
-  TERTIARY = 'tertiary',
 }
 
 export interface ImageTextSectionProps {
@@ -35,7 +34,7 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
   const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
 
   return (
-    <Section className={s('container', variant)} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
+    <Section className={s('container')} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} useBgColor={variant} ref={ref}>
       {image?.url && (
         <div className={s('image-wrapper', imageToLeft ? 'image-left' : '')}>
           <Image src={image.url} alt={((image?.title || image?.description) ?? title) as string} width={image.width} height={image.height} className={s('image')} />

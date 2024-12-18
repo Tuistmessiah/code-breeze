@@ -8,28 +8,21 @@ import StyleUtils from '../../utils/style.utils';
 import styles from './TitleSvg.module.scss';
 const s = StyleUtils.styleMixer(styles);
 
-export enum VariantsITSection {
-  PRIMARY = 'primary',
-  SECONDARY = 'secondary',
-  TERTIARY = 'tertiary',
-}
-
 export interface TitleSvgSectionProps {
   title: string;
   iconToLeft?: boolean;
   subTitle?: string;
-  variant?: VariantsITSection;
   icon?: React.ReactNode;
 }
 
 /** Section to introduce the content below. h1 and p container and optional big icon on the side. */
 export default function TitleSvgSection(props: TitleSvgSectionProps) {
-  const { title, variant = VariantsITSection.SECONDARY, subTitle, iconToLeft, icon } = props;
+  const { title, subTitle, iconToLeft, icon } = props;
 
   const { ref, inView } = useInView({ threshold: 0.6, delay: 300, triggerOnce: true });
 
   return (
-    <Section className={s('container', variant)} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} ref={ref}>
+    <Section className={s('container')} innerClassName={s('inner-container', 'fade-in', inView ? 'fade-in-visible' : '')} useBgColor="secondary" ref={ref}>
       {<div className={s('icon-wrapper', iconToLeft ? 'icon-left' : '')}>{icon ? icon : ''}</div>}
 
       <div className={s('content')}>

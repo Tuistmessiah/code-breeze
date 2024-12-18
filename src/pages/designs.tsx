@@ -65,7 +65,6 @@ export default function DesignsPage() {
       <TitleSvgSection
         title={translations?.designs.titleSvgPremium.title}
         subTitle={translations?.designs.titleSvgPremium.subTitle}
-        variant={VariantsITSection.SECONDARY}
         icon={<StarIcon />}
         iconToLeft={true}
       />
@@ -84,12 +83,7 @@ export default function DesignsPage() {
           <span>{translations.designs.disclaimer.paragraph2.note}</span>
         </p>
       </DisclaimerSection>
-      <TitleSvgSection
-        title={translations?.designs.titleSvgPortfolio.title}
-        subTitle={translations?.designs.titleSvgPortfolio.subTitle}
-        variant={VariantsITSection.SECONDARY}
-        icon={<CheckIcon />}
-      />
+      <TitleSvgSection title={translations?.designs.titleSvgPortfolio.title} subTitle={translations?.designs.titleSvgPortfolio.subTitle} icon={<CheckIcon />} />
       <>
         <CarouselSection title={translations.designs.carousel.portfolio.simple} cards={simpleCards} />
         <CarouselSection title={translations.designs.carousel.portfolio.modern} cards={modernCards} />
